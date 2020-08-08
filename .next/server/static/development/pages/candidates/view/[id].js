@@ -1,7 +1,7 @@
 module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
-/******/ 	var installedModules = require('../../../ssr-module-cache.js');
+/******/ 	var installedModules = require('../../../../../ssr-module-cache.js');
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -88,10 +88,761 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./components/fieldset/Fieldset.jsx":
+/*!******************************************!*\
+  !*** ./components/fieldset/Fieldset.jsx ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/styles */ "@material-ui/styles");
+/* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_ui_styles__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _lib_context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../lib/context */ "./lib/context.js");
+/* harmony import */ var _lib_colors__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../lib/colors */ "./lib/colors.js");
+var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\components\\fieldset\\Fieldset.jsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+
+
+
+const useStyles = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_0__["makeStyles"])(theme => ({
+  fieldset: props => ({
+    borderRadius: 4,
+    border: `2px solid ${theme.palette[props.color].main}`,
+    padding: 12
+  })
+}));
+
+function Fieldset(props) {
+  const {
+    color,
+    children
+  } = props;
+  const classes = useStyles({
+    color
+  });
+  return __jsx("fieldset", {
+    className: classes.fieldset,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, __jsx(_lib_context__WEBPACK_IMPORTED_MODULE_3__["FieldsetContext"].Provider, {
+    value: {
+      color
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, children));
+}
+
+Fieldset.propTypes = {
+  color: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf(_lib_colors__WEBPACK_IMPORTED_MODULE_4__["colors"]),
+  children: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.node.isRequired
+};
+Fieldset.defaultProps = {
+  color: 'primary'
+};
+/* harmony default export */ __webpack_exports__["default"] = (Fieldset);
+
+/***/ }),
+
+/***/ "./components/fieldset/Legend.jsx":
+/*!****************************************!*\
+  !*** ./components/fieldset/Legend.jsx ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/styles */ "@material-ui/styles");
+/* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_ui_styles__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _lib_context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../lib/context */ "./lib/context.js");
+var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\components\\fieldset\\Legend.jsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+
+
+const useStyles = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_0__["makeStyles"])(theme => ({
+  legend: props => ({
+    color: theme.palette[props.color].main
+  })
+}));
+
+function Legend(props) {
+  const {
+    children
+  } = props;
+  const {
+    color
+  } = Object(_lib_context__WEBPACK_IMPORTED_MODULE_3__["useFieldset"])();
+  const classes = useStyles({
+    color
+  });
+  return __jsx("legend", {
+    className: classes.legend,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, children);
+}
+
+Legend.propTypes = {
+  children: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.node.isRequired
+};
+/* harmony default export */ __webpack_exports__["default"] = (Legend);
+
+/***/ }),
+
+/***/ "./components/fieldset/index.js":
+/*!**************************************!*\
+  !*** ./components/fieldset/index.js ***!
+  \**************************************/
+/*! exports provided: default, Legend */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Fieldset__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Fieldset */ "./components/fieldset/Fieldset.jsx");
+/* harmony import */ var _Legend__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Legend */ "./components/fieldset/Legend.jsx");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Legend", function() { return _Legend__WEBPACK_IMPORTED_MODULE_1__["default"]; });
+
+
+/* harmony default export */ __webpack_exports__["default"] = (_Fieldset__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+
+/***/ }),
+
+/***/ "./components/formik/FormikSelect.jsx":
+/*!********************************************!*\
+  !*** ./components/formik/FormikSelect.jsx ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_core_InputLabel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/InputLabel */ "@material-ui/core/InputLabel");
+/* harmony import */ var _material_ui_core_InputLabel__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_InputLabel__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/MenuItem */ "@material-ui/core/MenuItem");
+/* harmony import */ var _material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_core_FormHelperText__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/FormHelperText */ "@material-ui/core/FormHelperText");
+/* harmony import */ var _material_ui_core_FormHelperText__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_FormHelperText__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/FormControl */ "@material-ui/core/FormControl");
+/* harmony import */ var _material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_core_Select__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/Select */ "@material-ui/core/Select");
+/* harmony import */ var _material_ui_core_Select__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Select__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_9__);
+
+
+var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\components\\formik\\FormikSelect.jsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+
+
+
+
+
+
+
+
+const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["makeStyles"])(theme => ({
+  formControl: {
+    minWidth: 120
+  },
+  selectEmpty: {
+    marginTop: theme.spacing(2)
+  }
+}));
+
+function FormikSelect(_ref) {
+  let {
+    field,
+    options,
+    textField,
+    textField2,
+    valueField,
+    fullWidth,
+    label,
+    form: {
+      touched,
+      errors
+    },
+    parser
+  } = _ref,
+      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["field", "options", "textField", "textField2", "valueField", "fullWidth", "label", "form", "parser"]);
+
+  const classes = useStyles();
+  const hasError = !!(touched[field.name] && errors[field.name]);
+  return __jsx(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    className: classes.formControl,
+    fullWidth: fullWidth,
+    error: hasError,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  }, __jsx(_material_ui_core_InputLabel__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    htmlFor: field.name,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }, label), __jsx(_material_ui_core_Select__WEBPACK_IMPORTED_MODULE_8___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, field, props, {
+    displayEmpty: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  }), options.map(item => __jsx(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    key: item.id,
+    value: item[valueField],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  }, parser ? parser(item[textField]) : textField2 ? item[textField] + " - " + item[textField2] : item[textField]))), touched[field.name] && errors[field.name] && __jsx(_material_ui_core_FormHelperText__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    style: {
+      color: 'red'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }, errors[field.name]));
+}
+
+FormikSelect.propTypes = {
+  field: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.objectOf({
+    name: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.string
+  }).isRequired,
+  form: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.objectOf({
+    touched: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.instanceOf(Array),
+    errors: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.instanceOf(Array)
+  }).isRequired,
+  options: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.shape({
+    id: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.number.isRequired
+  })),
+  label: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.string,
+  textField: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.string.isRequired,
+  valueField: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.string.isRequired,
+  fullWidth: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.bool
+};
+FormikSelect.defaultProps = {
+  fullWidth: false,
+  options: [],
+  label: ''
+};
+/* harmony default export */ __webpack_exports__["default"] = (FormikSelect);
+
+/***/ }),
+
+/***/ "./components/forms/CustomerForm.jsx":
+/*!*******************************************!*\
+  !*** ./components/forms/CustomerForm.jsx ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/styles */ "@material-ui/styles");
+/* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_styles__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! formik */ "formik");
+/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(formik__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var formik_material_ui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! formik-material-ui */ "formik-material-ui");
+/* harmony import */ var formik_material_ui__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(formik_material_ui__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _formik_FormikSelect__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../formik/FormikSelect */ "./components/formik/FormikSelect.jsx");
+/* harmony import */ var _lib_mock_data__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../lib/mock-data */ "./lib/mock-data.jsx");
+/* harmony import */ var _lib_country_data__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../lib/country-data */ "./lib/country-data.js");
+var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\components\\forms\\CustomerForm.jsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
+
+
+
+
+
+
+
+
+ // import api from '../../lib/api';
+
+const useStyles = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
+  form: {
+    display: 'flex',
+    flexDirection: 'column'
+  },
+  margin: {
+    margin: '60px 0'
+  },
+  buttonGroup: {
+    display: 'flex'
+  },
+  button: {
+    marginTop: 20,
+    marginRight: 8,
+    width: 120
+  },
+  buttonMarginRight: {
+    marginRight: theme.spacing(1)
+  }
+}));
+
+function CustomerForm() {
+  const classes = useStyles();
+  const router = Object(next_router__WEBPACK_IMPORTED_MODULE_5__["useRouter"])(); // const [currency, setCurrency] = useState();
+  //   const currencyData=[];  
+  //   let counter=1
+  //   useEffect(() => {
+  //     const fetchData = async () => {
+  //         const { data } = await api.get('/currency');
+  //         setCurrency(data); 
+  //       }; 
+  //   fetchData();
+  // }, []);
+  //   if(currency){
+  //     currency.map(cur=>{
+  //       console.log("a1",cur['code'])
+  //       currencyData.push({
+  //           id:counter++,
+  //           value:cur['code']+" - "+cur['currency'],
+  //       })
+  //     })
+  //   }
+
+  function handleCancel() {
+    router.back();
+  }
+
+  return __jsx(formik__WEBPACK_IMPORTED_MODULE_2__["Form"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65
+    },
+    __self: this
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    container: true,
+    spacing: 2,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    },
+    __self: this
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    item: true,
+    xs: 12,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
+    },
+    __self: this
+  }, __jsx(formik__WEBPACK_IMPORTED_MODULE_2__["Field"], {
+    name: "companyName",
+    component: formik_material_ui__WEBPACK_IMPORTED_MODULE_3__["TextField"],
+    label: "Company Name",
+    fullWidth: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: this
+  })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    item: true,
+    xs: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75
+    },
+    __self: this
+  }, __jsx(formik__WEBPACK_IMPORTED_MODULE_2__["Field"], {
+    name: "firstName",
+    component: formik_material_ui__WEBPACK_IMPORTED_MODULE_3__["TextField"],
+    label: "First Name",
+    fullWidth: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76
+    },
+    __self: this
+  })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    item: true,
+    xs: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 83
+    },
+    __self: this
+  }, __jsx(formik__WEBPACK_IMPORTED_MODULE_2__["Field"], {
+    name: "lastName",
+    component: formik_material_ui__WEBPACK_IMPORTED_MODULE_3__["TextField"],
+    label: "Last Name",
+    fullWidth: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 84
+    },
+    __self: this
+  })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    item: true,
+    xs: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 91
+    },
+    __self: this
+  }, __jsx(formik__WEBPACK_IMPORTED_MODULE_2__["Field"], {
+    name: "address1",
+    component: formik_material_ui__WEBPACK_IMPORTED_MODULE_3__["TextField"],
+    label: "Address 1",
+    fullWidth: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 92
+    },
+    __self: this
+  })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    item: true,
+    xs: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99
+    },
+    __self: this
+  }, __jsx(formik__WEBPACK_IMPORTED_MODULE_2__["Field"], {
+    name: "address2",
+    component: formik_material_ui__WEBPACK_IMPORTED_MODULE_3__["TextField"],
+    label: "Address 2",
+    fullWidth: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 100
+    },
+    __self: this
+  })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    item: true,
+    xs: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 107
+    },
+    __self: this
+  }, __jsx(formik__WEBPACK_IMPORTED_MODULE_2__["Field"], {
+    component: _formik_FormikSelect__WEBPACK_IMPORTED_MODULE_6__["default"],
+    name: "country",
+    textField: "value",
+    valueField: "value",
+    options: _lib_country_data__WEBPACK_IMPORTED_MODULE_8__["countryData"],
+    fullWidth: true,
+    label: "Country",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 108
+    },
+    __self: this
+  })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    item: true,
+    xs: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118
+    },
+    __self: this
+  }, __jsx(formik__WEBPACK_IMPORTED_MODULE_2__["Field"], {
+    name: "state",
+    component: formik_material_ui__WEBPACK_IMPORTED_MODULE_3__["TextField"],
+    label: "State",
+    fullWidth: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 119
+    },
+    __self: this
+  })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    item: true,
+    xs: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126
+    },
+    __self: this
+  }, __jsx(formik__WEBPACK_IMPORTED_MODULE_2__["Field"], {
+    name: "city",
+    component: formik_material_ui__WEBPACK_IMPORTED_MODULE_3__["TextField"],
+    label: "City",
+    fullWidth: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127
+    },
+    __self: this
+  })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    item: true,
+    xs: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 134
+    },
+    __self: this
+  }, __jsx(formik__WEBPACK_IMPORTED_MODULE_2__["Field"], {
+    name: "zipCode",
+    component: formik_material_ui__WEBPACK_IMPORTED_MODULE_3__["TextField"],
+    label: "Zipcode",
+    fullWidth: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 135
+    },
+    __self: this
+  }))), __jsx("div", {
+    className: classes.margin,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 143
+    },
+    __self: this
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Typography"], {
+    variant: "h5",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 144
+    },
+    __self: this
+  }, "Social Platform Details"), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    container: true,
+    spacing: 2,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 145
+    },
+    __self: this
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    item: true,
+    xs: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 146
+    },
+    __self: this
+  }, __jsx(formik__WEBPACK_IMPORTED_MODULE_2__["Field"], {
+    name: "facebookUrl",
+    component: formik_material_ui__WEBPACK_IMPORTED_MODULE_3__["TextField"],
+    label: "Facebook Url",
+    fullWidth: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 147
+    },
+    __self: this
+  })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    item: true,
+    xs: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 154
+    },
+    __self: this
+  }, __jsx(formik__WEBPACK_IMPORTED_MODULE_2__["Field"], {
+    name: "linkedinUrl",
+    component: formik_material_ui__WEBPACK_IMPORTED_MODULE_3__["TextField"],
+    label: "LinkedIn Url",
+    fullWidth: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 155
+    },
+    __self: this
+  })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    item: true,
+    xs: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 162
+    },
+    __self: this
+  }, __jsx(formik__WEBPACK_IMPORTED_MODULE_2__["Field"], {
+    name: "twitterUrl",
+    component: formik_material_ui__WEBPACK_IMPORTED_MODULE_3__["TextField"],
+    label: "Twitter Url",
+    fullWidth: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 163
+    },
+    __self: this
+  })))), __jsx("div", {
+    className: classes.margin,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 172
+    },
+    __self: this
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Typography"], {
+    variant: "h5",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 173
+    },
+    __self: this
+  }, "Financial Details"), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    container: true,
+    spacing: 2,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 174
+    },
+    __self: this
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    item: true,
+    xs: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 175
+    },
+    __self: this
+  }, __jsx(formik__WEBPACK_IMPORTED_MODULE_2__["Field"], {
+    component: _formik_FormikSelect__WEBPACK_IMPORTED_MODULE_6__["default"],
+    name: "currency",
+    textField: "name",
+    valueField: "id",
+    options: _lib_mock_data__WEBPACK_IMPORTED_MODULE_7__["currencyData"],
+    fullWidth: true,
+    label: "Currency",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 176
+    },
+    __self: this
+  })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    item: true,
+    xs: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 186
+    },
+    __self: this
+  }, __jsx(formik__WEBPACK_IMPORTED_MODULE_2__["Field"], {
+    component: _formik_FormikSelect__WEBPACK_IMPORTED_MODULE_6__["default"],
+    name: "chartOfAccounts",
+    textField: "name",
+    valueField: "value",
+    options: _lib_mock_data__WEBPACK_IMPORTED_MODULE_7__["chartofaccountsDropdownData"],
+    fullWidth: true,
+    label: "Chart of Accounts",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 187
+    },
+    __self: this
+  })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    item: true,
+    xs: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 197
+    },
+    __self: this
+  }, __jsx(formik__WEBPACK_IMPORTED_MODULE_2__["Field"], {
+    name: "companyNumber",
+    component: formik_material_ui__WEBPACK_IMPORTED_MODULE_3__["TextField"],
+    label: "Company Number",
+    fullWidth: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 198
+    },
+    __self: this
+  })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    item: true,
+    xs: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 205
+    },
+    __self: this
+  }, __jsx(formik__WEBPACK_IMPORTED_MODULE_2__["Field"], {
+    name: "taxNumber",
+    component: formik_material_ui__WEBPACK_IMPORTED_MODULE_3__["TextField"],
+    label: "Tax Number",
+    fullWidth: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 206
+    },
+    __self: this
+  })))), __jsx("div", {
+    className: classes.buttonGroup,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 216
+    },
+    __self: this
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Button"], {
+    className: classes.button,
+    variant: "contained",
+    color: "primary",
+    type: "submit",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 217
+    },
+    __self: this
+  }, "Save"), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Button"], {
+    className: classes.button,
+    variant: "outlined",
+    color: "primary",
+    onClick: handleCancel,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 225
+    },
+    __self: this
+  }, "Cancel")));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (CustomerForm);
+
+/***/ }),
 
 /***/ "./components/loader/CircularLoader.jsx":
 /*!**********************************************!*\
@@ -292,447 +1043,6 @@ function CustomMenu() {
     __self: this
   }))));
 }
-
-/***/ }),
-
-/***/ "./components/tables/Table.jsx":
-/*!*************************************!*\
-  !*** ./components/tables/Table.jsx ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
-/* harmony import */ var _material_ui_icons_AddBox__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/icons/AddBox */ "@material-ui/icons/AddBox");
-/* harmony import */ var _material_ui_icons_AddBox__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_AddBox__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_ui_icons_ArrowUpward__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/icons/ArrowUpward */ "@material-ui/icons/ArrowUpward");
-/* harmony import */ var _material_ui_icons_ArrowUpward__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ArrowUpward__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_ui_icons_Check__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/Check */ "@material-ui/icons/Check");
-/* harmony import */ var _material_ui_icons_Check__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Check__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _material_ui_icons_ChevronLeft__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/ChevronLeft */ "@material-ui/icons/ChevronLeft");
-/* harmony import */ var _material_ui_icons_ChevronLeft__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ChevronLeft__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _material_ui_icons_ChevronRight__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/ChevronRight */ "@material-ui/icons/ChevronRight");
-/* harmony import */ var _material_ui_icons_ChevronRight__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ChevronRight__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _material_ui_icons_Clear__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/Clear */ "@material-ui/icons/Clear");
-/* harmony import */ var _material_ui_icons_Clear__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Clear__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _material_ui_icons_DeleteOutline__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/DeleteOutline */ "@material-ui/icons/DeleteOutline");
-/* harmony import */ var _material_ui_icons_DeleteOutline__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_DeleteOutline__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/icons/Edit */ "@material-ui/icons/Edit");
-/* harmony import */ var _material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _material_ui_icons_FilterList__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons/FilterList */ "@material-ui/icons/FilterList");
-/* harmony import */ var _material_ui_icons_FilterList__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_FilterList__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _material_ui_icons_FirstPage__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/icons/FirstPage */ "@material-ui/icons/FirstPage");
-/* harmony import */ var _material_ui_icons_FirstPage__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_FirstPage__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _material_ui_icons_LastPage__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/icons/LastPage */ "@material-ui/icons/LastPage");
-/* harmony import */ var _material_ui_icons_LastPage__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_LastPage__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _material_ui_icons_Remove__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/icons/Remove */ "@material-ui/icons/Remove");
-/* harmony import */ var _material_ui_icons_Remove__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Remove__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _material_ui_icons_SaveAlt__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/icons/SaveAlt */ "@material-ui/icons/SaveAlt");
-/* harmony import */ var _material_ui_icons_SaveAlt__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_SaveAlt__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/icons/Search */ "@material-ui/icons/Search");
-/* harmony import */ var _material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _material_ui_icons_ViewColumn__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @material-ui/icons/ViewColumn */ "@material-ui/icons/ViewColumn");
-/* harmony import */ var _material_ui_icons_ViewColumn__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ViewColumn__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var material_table__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! material-table */ "material-table");
-/* harmony import */ var material_table__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(material_table__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_19__);
-
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\components\\tables\\Table.jsx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_17___default.a.createElement;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const tableIcons = {
-  Add: Object(react__WEBPACK_IMPORTED_MODULE_17__["forwardRef"])((props, ref) => __jsx(_material_ui_icons_AddBox__WEBPACK_IMPORTED_MODULE_1___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    ref: ref,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: undefined
-  }))),
-  Check: Object(react__WEBPACK_IMPORTED_MODULE_17__["forwardRef"])((props, ref) => __jsx(_material_ui_icons_Check__WEBPACK_IMPORTED_MODULE_3___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    ref: ref,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: undefined
-  }))),
-  Clear: Object(react__WEBPACK_IMPORTED_MODULE_17__["forwardRef"])((props, ref) => __jsx(_material_ui_icons_Clear__WEBPACK_IMPORTED_MODULE_6___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    ref: ref,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: undefined
-  }))),
-  Delete: Object(react__WEBPACK_IMPORTED_MODULE_17__["forwardRef"])((props, ref) => __jsx(_material_ui_icons_DeleteOutline__WEBPACK_IMPORTED_MODULE_7___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    ref: ref,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: undefined
-  }))),
-  DetailPanel: Object(react__WEBPACK_IMPORTED_MODULE_17__["forwardRef"])((props, ref) => __jsx(_material_ui_icons_ChevronRight__WEBPACK_IMPORTED_MODULE_5___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    ref: ref,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: undefined
-  }))),
-  Edit: Object(react__WEBPACK_IMPORTED_MODULE_17__["forwardRef"])((props, ref) => __jsx(_material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_8___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    ref: ref,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: undefined
-  }))),
-  Export: Object(react__WEBPACK_IMPORTED_MODULE_17__["forwardRef"])((props, ref) => __jsx(_material_ui_icons_SaveAlt__WEBPACK_IMPORTED_MODULE_13___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    ref: ref,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    },
-    __self: undefined
-  }))),
-  Filter: Object(react__WEBPACK_IMPORTED_MODULE_17__["forwardRef"])((props, ref) => __jsx(_material_ui_icons_FilterList__WEBPACK_IMPORTED_MODULE_9___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    ref: ref,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: undefined
-  }))),
-  FirstPage: Object(react__WEBPACK_IMPORTED_MODULE_17__["forwardRef"])((props, ref) => __jsx(_material_ui_icons_FirstPage__WEBPACK_IMPORTED_MODULE_10___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    ref: ref,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
-    },
-    __self: undefined
-  }))),
-  LastPage: Object(react__WEBPACK_IMPORTED_MODULE_17__["forwardRef"])((props, ref) => __jsx(_material_ui_icons_LastPage__WEBPACK_IMPORTED_MODULE_11___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    ref: ref,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: undefined
-  }))),
-  NextPage: Object(react__WEBPACK_IMPORTED_MODULE_17__["forwardRef"])((props, ref) => __jsx(_material_ui_icons_ChevronRight__WEBPACK_IMPORTED_MODULE_5___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    ref: ref,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: undefined
-  }))),
-  PreviousPage: Object(react__WEBPACK_IMPORTED_MODULE_17__["forwardRef"])((props, ref) => __jsx(_material_ui_icons_ChevronLeft__WEBPACK_IMPORTED_MODULE_4___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    ref: ref,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: undefined
-  }))),
-  ResetSearch: Object(react__WEBPACK_IMPORTED_MODULE_17__["forwardRef"])((props, ref) => __jsx(_material_ui_icons_Clear__WEBPACK_IMPORTED_MODULE_6___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    ref: ref,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: undefined
-  }))),
-  Search: Object(react__WEBPACK_IMPORTED_MODULE_17__["forwardRef"])((props, ref) => __jsx(_material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_14___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    ref: ref,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: undefined
-  }))),
-  SortArrow: Object(react__WEBPACK_IMPORTED_MODULE_17__["forwardRef"])((props, ref) => __jsx(_material_ui_icons_ArrowUpward__WEBPACK_IMPORTED_MODULE_2___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    ref: ref,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: undefined
-  }))),
-  ThirdStateCheck: Object(react__WEBPACK_IMPORTED_MODULE_17__["forwardRef"])((props, ref) => __jsx(_material_ui_icons_Remove__WEBPACK_IMPORTED_MODULE_12___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    ref: ref,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41
-    },
-    __self: undefined
-  }))),
-  ViewColumn: Object(react__WEBPACK_IMPORTED_MODULE_17__["forwardRef"])((props, ref) => __jsx(_material_ui_icons_ViewColumn__WEBPACK_IMPORTED_MODULE_15___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    ref: ref,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42
-    },
-    __self: undefined
-  })))
-};
-
-function Table(props) {
-  const {
-    title
-  } = props;
-  return __jsx(material_table__WEBPACK_IMPORTED_MODULE_16___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    title: title,
-    components: {
-      Container: paperProps => __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_18__["Paper"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, paperProps, {
-        elevation: 0,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 51
-        },
-        __self: this
-      }))
-    },
-    icons: tableIcons,
-    options: {
-      actionsColumnIndex: -1
-    }
-  }, props, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: this
-  }));
-}
-
-Table.propTypes = {
-  title: prop_types__WEBPACK_IMPORTED_MODULE_19___default.a.string
-};
-Table.defaultProps = {
-  title: ''
-};
-/* harmony default export */ __webpack_exports__["default"] = (Table);
-
-/***/ }),
-
-/***/ "./components/tables/TablePaginationActions.jsx":
-/*!******************************************************!*\
-  !*** ./components/tables/TablePaginationActions.jsx ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/core/IconButton */ "@material-ui/core/IconButton");
-/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_ui_icons_FirstPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/icons/FirstPage */ "@material-ui/icons/FirstPage");
-/* harmony import */ var _material_ui_icons_FirstPage__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_FirstPage__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_ui_icons_KeyboardArrowLeft__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/KeyboardArrowLeft */ "@material-ui/icons/KeyboardArrowLeft");
-/* harmony import */ var _material_ui_icons_KeyboardArrowLeft__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_KeyboardArrowLeft__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _material_ui_icons_KeyboardArrowRight__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/KeyboardArrowRight */ "@material-ui/icons/KeyboardArrowRight");
-/* harmony import */ var _material_ui_icons_KeyboardArrowRight__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_KeyboardArrowRight__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _material_ui_icons_LastPage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/LastPage */ "@material-ui/icons/LastPage");
-/* harmony import */ var _material_ui_icons_LastPage__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_LastPage__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\components\\tables\\TablePaginationActions.jsx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
-
-
-
-
-
-
-
-
-const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
-  root: {
-    flexShrink: 0,
-    marginLeft: theme.spacing(2.5)
-  }
-}));
-
-function TablePaginationActions(props) {
-  const classes = useStyles();
-  const theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["useTheme"])();
-  const {
-    count,
-    page,
-    rowsPerPage,
-    onChangePage
-  } = props;
-
-  const handleFirstPageButtonClick = event => {
-    onChangePage(event, 0);
-  };
-
-  const handleBackButtonClick = event => {
-    onChangePage(event, page - 1);
-  };
-
-  const handleNextButtonClick = event => {
-    onChangePage(event, page + 1);
-  };
-
-  const handleLastPageButtonClick = event => {
-    onChangePage(event, Math.max(0, Math.ceil(count / rowsPerPage) - 1));
-  };
-
-  return __jsx("div", {
-    className: classes.root,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41
-    },
-    __self: this
-  }, __jsx(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    onClick: handleFirstPageButtonClick,
-    disabled: page === 0,
-    "aria-label": "first page",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42
-    },
-    __self: this
-  }, theme.direction === 'rtl' ? __jsx(_material_ui_icons_LastPage__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
-  }) : __jsx(_material_ui_icons_FirstPage__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
-  })), __jsx(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    onClick: handleBackButtonClick,
-    disabled: page === 0,
-    "aria-label": "previous page",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49
-    },
-    __self: this
-  }, theme.direction === 'rtl' ? __jsx(_material_ui_icons_KeyboardArrowRight__WEBPACK_IMPORTED_MODULE_4___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50
-    },
-    __self: this
-  }) : __jsx(_material_ui_icons_KeyboardArrowLeft__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50
-    },
-    __self: this
-  })), __jsx(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    onClick: handleNextButtonClick,
-    disabled: page >= Math.ceil(count / rowsPerPage) - 1,
-    "aria-label": "next page",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52
-    },
-    __self: this
-  }, theme.direction === 'rtl' ? __jsx(_material_ui_icons_KeyboardArrowLeft__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 57
-    },
-    __self: this
-  }) : __jsx(_material_ui_icons_KeyboardArrowRight__WEBPACK_IMPORTED_MODULE_4___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 57
-    },
-    __self: this
-  })), __jsx(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    onClick: handleLastPageButtonClick,
-    disabled: page >= Math.ceil(count / rowsPerPage) - 1,
-    "aria-label": "last page",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59
-    },
-    __self: this
-  }, theme.direction === 'rtl' ? __jsx(_material_ui_icons_FirstPage__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64
-    },
-    __self: this
-  }) : __jsx(_material_ui_icons_LastPage__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64
-    },
-    __self: this
-  })));
-}
-
-TablePaginationActions.propTypes = {
-  count: prop_types__WEBPACK_IMPORTED_MODULE_6___default.a.number.isRequired,
-  onChangePage: prop_types__WEBPACK_IMPORTED_MODULE_6___default.a.func.isRequired,
-  page: prop_types__WEBPACK_IMPORTED_MODULE_6___default.a.number.isRequired,
-  rowsPerPage: prop_types__WEBPACK_IMPORTED_MODULE_6___default.a.number.isRequired
-};
-/* harmony default export */ __webpack_exports__["default"] = (TablePaginationActions);
-
-/***/ }),
-
-/***/ "./components/tables/index.js":
-/*!************************************!*\
-  !*** ./components/tables/index.js ***!
-  \************************************/
-/*! exports provided: TablePaginationActions, Table */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _TablePaginationActions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TablePaginationActions */ "./components/tables/TablePaginationActions.jsx");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "TablePaginationActions", function() { return _TablePaginationActions__WEBPACK_IMPORTED_MODULE_0__["default"]; });
-
-/* harmony import */ var _Table__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Table */ "./components/tables/Table.jsx");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Table", function() { return _Table__WEBPACK_IMPORTED_MODULE_1__["default"]; });
-
-
-
-
 
 /***/ }),
 
@@ -1423,6 +1733,68 @@ const toFormData = object => {
 
 /***/ }),
 
+/***/ "./lib/colors.js":
+/*!***********************!*\
+  !*** ./lib/colors.js ***!
+  \***********************/
+/*! exports provided: default, colors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "colors", function() { return colors; });
+/* harmony default export */ __webpack_exports__["default"] = (['primary', 'secondary', 'danger']);
+const colors = ['primary', 'secondary', 'danger'];
+
+/***/ }),
+
+/***/ "./lib/context.js":
+/*!************************!*\
+  !*** ./lib/context.js ***!
+  \************************/
+/*! exports provided: SnackbarContext, useSnackbar, FieldsetContext, useFieldset */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SnackbarContext", function() { return SnackbarContext; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useSnackbar", function() { return useSnackbar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FieldsetContext", function() { return FieldsetContext; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useFieldset", function() { return useFieldset; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+const SnackbarContext = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext();
+const useSnackbar = () => Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(SnackbarContext);
+const FieldsetContext = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext();
+const useFieldset = () => Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(FieldsetContext);
+
+/***/ }),
+
+/***/ "./lib/country-data.js":
+/*!*****************************!*\
+  !*** ./lib/country-data.js ***!
+  \*****************************/
+/*! exports provided: countryData */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "countryData", function() { return countryData; });
+/* harmony import */ var react_country_region_selector__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-country-region-selector */ "react-country-region-selector");
+/* harmony import */ var react_country_region_selector__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_country_region_selector__WEBPACK_IMPORTED_MODULE_0__);
+
+const countryData = [];
+let counter = 1;
+react_country_region_selector__WEBPACK_IMPORTED_MODULE_0__["CountryRegionData"].map(country => {
+  countryData.push({
+    id: counter++,
+    value: country[0]
+  });
+});
+
+/***/ }),
+
 /***/ "./lib/drawer-data.jsx":
 /*!*****************************!*\
   !*** ./lib/drawer-data.jsx ***!
@@ -1522,6 +1894,566 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
   title: 'Logout',
   link: '/logout'
 }]);
+
+/***/ }),
+
+/***/ "./lib/mock-data.jsx":
+/*!***************************!*\
+  !*** ./lib/mock-data.jsx ***!
+  \***************************/
+/*! exports provided: countriesMockData, currenciesMockData, categoryData, customerData, financialData, accountsMockData, purchaseproductData, salesproductData, twoFactorAuthMockData, chartOfAccountsMockData, ledgersMockData, activeBusinessesMockData, archivedBusinessesMockData, vendorData, businessTypes, currencyData, chartofaccountsDropdownData, userListMockData */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "countriesMockData", function() { return countriesMockData; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "currenciesMockData", function() { return currenciesMockData; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "categoryData", function() { return categoryData; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "customerData", function() { return customerData; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "financialData", function() { return financialData; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "accountsMockData", function() { return accountsMockData; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "purchaseproductData", function() { return purchaseproductData; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "salesproductData", function() { return salesproductData; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "twoFactorAuthMockData", function() { return twoFactorAuthMockData; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "chartOfAccountsMockData", function() { return chartOfAccountsMockData; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ledgersMockData", function() { return ledgersMockData; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "activeBusinessesMockData", function() { return activeBusinessesMockData; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "archivedBusinessesMockData", function() { return archivedBusinessesMockData; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "vendorData", function() { return vendorData; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "businessTypes", function() { return businessTypes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "currencyData", function() { return currencyData; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "chartofaccountsDropdownData", function() { return chartofaccountsDropdownData; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "userListMockData", function() { return userListMockData; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_icons_Lock__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/icons/Lock */ "@material-ui/icons/Lock");
+/* harmony import */ var _material_ui_icons_Lock__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Lock__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\lib\\mock-data.jsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+const countriesMockData = [{
+  id: 1,
+  name: 'United Kingdom'
+}, {
+  id: 2,
+  name: 'Ireland'
+}, {
+  id: 3,
+  name: 'United Arab Emirates'
+}];
+const currenciesMockData = [{
+  id: 1,
+  name: 'Purchase journal'
+}, {
+  id: 2,
+  name: 'Sales journal'
+}, {
+  id: 3,
+  name: 'Cash receipts journal'
+}, {
+  id: 4,
+  name: 'Cash payment/disbursement journal'
+}, {
+  id: 5,
+  name: 'Purchase return journal'
+}, {
+  id: 6,
+  name: 'Sales return journal'
+}, {
+  id: 7,
+  name: 'Journal proper/General journal'
+}];
+const categoryData = [{
+  id: 1,
+  name: 'Category 1',
+  parentCategory: ''
+}, {
+  id: 2,
+  name: 'Category 2',
+  parentCategory: ''
+}, {
+  id: 3,
+  name: 'Category 3',
+  parentCategory: ''
+}, {
+  id: 4,
+  name: 'Category 4',
+  parentCategory: ''
+}, {
+  id: 5,
+  name: 'Category 5',
+  parentCategory: ''
+}];
+const customerData = [{
+  id: 1,
+  companyName: 'Technoark Solutions',
+  firstName: 'Customer 1 First Name',
+  lastName: 'Customer 1 Last Name'
+}, {
+  id: 2,
+  companyName: 'Technoark Solutions',
+  firstName: 'Customer 2 First Name',
+  lastName: 'Customer 2 Last Name'
+}, {
+  id: 3,
+  companyName: 'Technoark Solutions',
+  firstName: 'Customer 3 First Name',
+  lastName: 'Customer 3 Last Name'
+}, {
+  id: 4,
+  companyName: 'Technoark Solutions',
+  firstName: 'Customer 4 First Name',
+  lastName: 'Customer 4 Last Name'
+}, {
+  id: 5,
+  companyName: 'Technoark Solutions',
+  firstName: 'Customer 5 First Name',
+  lastName: 'Customer 5 Last Name'
+}, {
+  id: 6,
+  companyName: 'Technoark Solutions',
+  firstName: 'Customer 6 First Name',
+  lastName: 'Customer 6 Last Name'
+}, {
+  id: 7,
+  companyName: 'Technoark Solutions',
+  firstName: 'Customer 7 First Name',
+  lastName: 'Customer 7 Last Name'
+}, {
+  id: 8,
+  companyName: 'Technoark Solutions',
+  firstName: 'Customer 8 First Name',
+  lastName: 'Customer 8 Last Name'
+}, {
+  id: 9,
+  companyName: 'Technoark Solutions',
+  firstName: 'Customer 9 First Name',
+  lastName: 'Customer 9 Last Name'
+}, {
+  id: 10,
+  companyName: 'Technoark Solutions',
+  firstName: 'Customer 10 First Name',
+  lastName: 'Customer 10 Last Name'
+}];
+const financialData = [{
+  id: 1,
+  name: 'Financial 1',
+  start: '01/01/2019',
+  end: '01/01/2020'
+}, {
+  id: 2,
+  name: 'Financial 2',
+  start: '01/01/2020',
+  end: '01/01/2021'
+}, {
+  id: 3,
+  name: 'Financial 3',
+  start: '01/01/2021',
+  end: '01/01/2022'
+}, {
+  id: 4,
+  name: 'Financial 4',
+  start: '01/01/2022',
+  end: '01/01/2023'
+}, {
+  id: 5,
+  name: 'Financial 5',
+  start: '01/01/2023',
+  end: '01/01/2024'
+}];
+const accountsMockData = [{
+  id: 1,
+  name: 'Account 1'
+}, {
+  id: 2,
+  name: 'Account 2'
+}, {
+  id: 3,
+  name: 'Account 3'
+}];
+const purchaseproductData = [{
+  id: 1,
+  name: 'Product 1',
+  description: 'Product 1 Description',
+  price: 100,
+  tax: 1
+}, {
+  id: 2,
+  name: 'Product 2',
+  description: 'Product 2 Description',
+  price: 100,
+  tax: 1
+}, {
+  id: 3,
+  name: 'Product 3',
+  description: 'Product 3 Description',
+  price: 100,
+  tax: 1
+}, {
+  id: 4,
+  name: 'Product 4',
+  description: 'Product 4 Description',
+  price: 100,
+  tax: 1
+}, {
+  id: 5,
+  name: 'Product 5',
+  description: 'Product 5 Description',
+  price: 100,
+  tax: 1
+}];
+const salesproductData = [{
+  id: 1,
+  name: 'Sales Product 1',
+  description: 'Sales Product 1 Description',
+  price: 100,
+  tax: 1
+}, {
+  id: 2,
+  name: 'Sales Product 2',
+  description: 'Sales Product 2 Description',
+  price: 100,
+  tax: 1
+}, {
+  id: 3,
+  name: 'Sales Product 3',
+  description: 'Sales Product 3 Description',
+  price: 100,
+  tax: 1
+}, {
+  id: 4,
+  name: 'Sales Product 4',
+  description: 'Sales Product 4 Description',
+  price: 100,
+  tax: 1
+}, {
+  id: 5,
+  name: 'Sales Product 5',
+  description: 'Sales Product 5 Description',
+  price: 100,
+  tax: 1
+}];
+const twoFactorAuthMockData = [{
+  id: 1,
+  name: 'Mobile OTP',
+  type: 'mobile'
+}, {
+  id: 2,
+  name: 'Email OTP/Notification',
+  type: 'email'
+}, {
+  id: 3,
+  name: 'Push Notification',
+  type: 'push'
+}, {
+  id: 4,
+  name: 'Auth0 App',
+  type: 'auth0'
+}, {
+  id: 5,
+  name: 'Duck Auth App',
+  type: 'duck'
+}];
+const chartOfAccountsMockData = [{
+  name: 'Assets',
+  id: 1,
+  categories: [{
+    id: 1,
+    name: 'Cash & Bank',
+    accounts: [{
+      id: 1,
+      name: 'Axis Bank',
+      lastTransactionDate: '',
+      details: ''
+    }]
+  }]
+}, {
+  name: 'Liabilities & Credit Cards',
+  id: 2,
+  categories: [{
+    id: 1,
+    name: 'Cash & Bank',
+    accounts: [{
+      id: 1,
+      name: 'Axis Bank',
+      lastTransactionDate: '',
+      details: ''
+    }]
+  }]
+}, {
+  name: 'Income',
+  id: 3,
+  categories: [{
+    id: 1,
+    name: 'Cash & Bank',
+    accounts: [{
+      id: 1,
+      name: 'Axis Bank',
+      lastTransactionDate: '',
+      details: ''
+    }]
+  }]
+}, {
+  name: 'Expenses',
+  id: 4,
+  categories: [{
+    id: 1,
+    name: 'Cash & Bank',
+    accounts: [{
+      id: 1,
+      name: 'Axis Bank',
+      lastTransactionDate: '',
+      details: ''
+    }]
+  }]
+}, {
+  name: 'Equity',
+  id: 5,
+  categories: [{
+    id: 1,
+    name: 'Cash & Bank',
+    accounts: [{
+      id: 1,
+      name: 'Axis Bank',
+      lastTransactionDate: '',
+      details: ''
+    }]
+  }]
+}];
+const ledgersMockData = [{
+  account: 'Technoark',
+  description: 'Description',
+  credit: 'Credit',
+  debit: 'Debit'
+}, {
+  account: 'Technoark',
+  description: 'Description',
+  credit: 'Credit',
+  debit: 'Debit'
+}, {
+  account: 'Technoark',
+  description: 'Description',
+  credit: 'Credit',
+  debit: 'Debit'
+}];
+const activeBusinessesMockData = [{
+  id: 1,
+  name: 'Technoark',
+  date: 'FY 2019/2020',
+  actions: [{
+    tip: 'Lock Business',
+    icon: __jsx(_material_ui_icons_Lock__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 365
+      },
+      __self: undefined
+    })
+  }]
+}, {
+  id: 2,
+  name: 'Technoark',
+  date: 'FY 2019/2020',
+  actions: [{
+    tip: 'Lock Business',
+    icon: __jsx(_material_ui_icons_Lock__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 373
+      },
+      __self: undefined
+    })
+  }]
+}, {
+  id: 3,
+  name: 'Technoark',
+  date: 'FY 2019/2020',
+  actions: [{
+    tip: 'Lock Business',
+    icon: __jsx(_material_ui_icons_Lock__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 381
+      },
+      __self: undefined
+    })
+  }]
+}];
+const archivedBusinessesMockData = [{
+  id: 1,
+  name: 'Technoark',
+  date: 'FY 2019/2020',
+  actions: [{
+    tip: 'Lock Business',
+    icon: __jsx(_material_ui_icons_Lock__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 392
+      },
+      __self: undefined
+    })
+  }]
+}, {
+  id: 2,
+  name: 'Technoark',
+  date: 'FY 2019/2020',
+  actions: [{
+    tip: 'Lock Business',
+    icon: __jsx(_material_ui_icons_Lock__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 400
+      },
+      __self: undefined
+    })
+  }]
+}, {
+  id: 3,
+  name: 'Technoark',
+  date: 'FY 2019/2020',
+  actions: [{
+    tip: 'Lock Business',
+    icon: __jsx(_material_ui_icons_Lock__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 408
+      },
+      __self: undefined
+    })
+  }]
+}];
+const vendorData = [{
+  id: 1,
+  companyName: 'Technoark Solutions',
+  firstName: 'Vendor 1 First Name',
+  lastName: 'Vendor 1 Last Name'
+}, {
+  id: 2,
+  companyName: 'Technoark Solutions',
+  firstName: 'Vendor 2 First Name',
+  lastName: 'Vendor 2 Last Name'
+}, {
+  id: 3,
+  companyName: 'Technoark Solutions',
+  firstName: 'Vendor 3 First Name',
+  lastName: 'Vendor 3 Last Name'
+}, {
+  id: 4,
+  companyName: 'Technoark Solutions',
+  firstName: 'Vendor 4 First Name',
+  lastName: 'Vendor 4 Last Name'
+}, {
+  id: 5,
+  companyName: 'Technoark Solutions',
+  firstName: 'Vendor 5 First Name',
+  lastName: 'Vendor 5 Last Name'
+}, {
+  id: 6,
+  companyName: 'Technoark Solutions',
+  firstName: 'Vendor 6 First Name',
+  lastName: 'Vendor 6 Last Name'
+}, {
+  id: 7,
+  companyName: 'Technoark Solutions',
+  firstName: 'Vendor 7 First Name',
+  lastName: 'Vendor 7 Last Name'
+}, {
+  id: 8,
+  companyName: 'Technoark Solutions',
+  firstName: 'Vendor 8 First Name',
+  lastName: 'Vendor 8 Last Name'
+}, {
+  id: 9,
+  companyName: 'Technoark Solutions',
+  firstName: 'Vendor 9 First Name',
+  lastName: 'Vendor 9 Last Name'
+}, {
+  id: 10,
+  companyName: 'Technoark Solutions',
+  firstName: 'Vendor 10 First Name',
+  lastName: 'Vendor 10 Last Name'
+}];
+const businessTypes = [{
+  id: 1,
+  name: 'Sole Proprietor'
+}, {
+  id: 1,
+  name: 'Partnership'
+}, {
+  id: 1,
+  name: 'Limited Liability'
+}];
+const currencyData = [{
+  id: 1,
+  name: 'Euro',
+  symbol: '€'
+}, {
+  id: 2,
+  name: 'Pound',
+  symbol: '£'
+}, {
+  id: 3,
+  name: 'Dollar',
+  symbol: '$'
+}];
+const chartofaccountsDropdownData = [{
+  name: 'Assets',
+  value: '1'
+}, {
+  name: 'Liabilities & Credit Cards',
+  value: '2'
+}, {
+  name: 'Income',
+  value: '3'
+}, {
+  name: 'Expenses',
+  value: '4'
+}, {
+  name: 'Equity',
+  value: '5'
+}];
+const userListMockData = [{
+  id: 1,
+  name: 'Shabbir Vohra 1',
+  avtar: 'S',
+  role: 'Super Admin',
+  title: 'CEO',
+  email: 'shabbir@technoark.in',
+  status: true
+}, {
+  id: 2,
+  name: 'Shabbir Vohra 2',
+  avtar: 'A',
+  role: 'Admin',
+  title: 'CTO',
+  email: 'shabbir@technoark.in',
+  status: true
+}, {
+  id: 3,
+  name: 'Shabbir Vohra 3',
+  avtar: 'B',
+  role: 'Employee',
+  title: 'CFO',
+  email: 'shabbir@technoark.in',
+  status: true
+}, {
+  id: 4,
+  name: 'Shabbir Vohra 4',
+  avtar: 'C',
+  role: 'Customer',
+  title: 'MD',
+  email: 'shabbir@technoark.in',
+  status: false
+}, {
+  id: 5,
+  name: 'Shabbir Vohra 5',
+  avtar: 'D',
+  role: 'Supervisor',
+  title: 'CEO',
+  email: 'shabbir@technoark.in',
+  status: false
+}];
 
 /***/ }),
 
@@ -1712,6 +2644,74 @@ function _objectSpread(target) {
     ownKeys.forEach(function (key) {
       Object(_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(target, key, source[key]);
     });
+  }
+
+  return target;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutProperties.js":
+/*!************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutProperties.js ***!
+  \************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectWithoutProperties; });
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutPropertiesLoose.js");
+
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+  var target = Object(_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(source, excluded);
+  var key, i;
+
+  if (_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_0___default.a) {
+    var sourceSymbolKeys = _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_0___default()(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutPropertiesLoose.js":
+/*!*****************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutPropertiesLoose.js ***!
+  \*****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectWithoutPropertiesLoose; });
+/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_keys__WEBPACK_IMPORTED_MODULE_0__);
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+
+  var sourceKeys = _core_js_object_keys__WEBPACK_IMPORTED_MODULE_0___default()(source);
+
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
   }
 
   return target;
@@ -3586,10 +4586,10 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./pages/candidates/index.js":
-/*!***********************************!*\
-  !*** ./pages/candidates/index.js ***!
-  \***********************************/
+/***/ "./pages/candidates/view/[id].js":
+/*!***************************************!*\
+  !*** ./pages/candidates/view/[id].js ***!
+  \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3597,21 +4597,25 @@ if (false) {} else {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/icons/Add */ "@material-ui/icons/Add");
-/* harmony import */ var _material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/icons/Edit */ "@material-ui/icons/Edit");
-/* harmony import */ var _material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_ui_icons_Visibility__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/Visibility */ "@material-ui/icons/Visibility");
-/* harmony import */ var _material_ui_icons_Visibility__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Visibility__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/icons/Delete */ "@material-ui/icons/Delete");
+/* harmony import */ var _material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! formik */ "formik");
+/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(formik__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/router */ "next/router");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_tables__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/tables */ "./components/tables/index.js");
-/* harmony import */ var _layout__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../layout */ "./layout/index.js");
-/* harmony import */ var _lib_api__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../lib/api */ "./lib/api.js");
-/* harmony import */ var _components_loader_CircularLoader__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/loader/CircularLoader */ "./components/loader/CircularLoader.jsx");
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\pages\\candidates\\index.js";
+/* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! yup */ "yup");
+/* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(yup__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_fieldset__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../components/fieldset */ "./components/fieldset/index.js");
+/* harmony import */ var _layout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../layout */ "./layout/index.js");
+/* harmony import */ var _lib_api__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../lib/api */ "./lib/api.js");
+/* harmony import */ var _lib_context__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../lib/context */ "./lib/context.js");
+/* harmony import */ var _components_forms_CustomerForm__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../components/forms/CustomerForm */ "./components/forms/CustomerForm.jsx");
+/* harmony import */ var _components_loader_CircularLoader__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../components/loader/CircularLoader */ "./components/loader/CircularLoader.jsx");
+var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\pages\\candidates\\view\\[id].js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 
 
@@ -3626,215 +4630,128 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 
 
 
-function CandidatesPage() {
+const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
+  accountPaper: {
+    padding: 20
+  },
+  margin: {
+    margin: '60px 0'
+  },
+  deleteButton: {
+    color: 'white',
+    backgroundColor: theme.palette.danger.main,
+    '&:hover': {
+      backgroundColor: theme.palette.danger.main
+    }
+  },
+  dialogActions: {
+    padding: 20
+  }
+}));
+const validationSchema = yup__WEBPACK_IMPORTED_MODULE_6__["object"]().shape({
+  companyName: yup__WEBPACK_IMPORTED_MODULE_6__["string"]().required('Company Name is required.'),
+  firstName: yup__WEBPACK_IMPORTED_MODULE_6__["string"]().required('First Name is required.'),
+  lastName: yup__WEBPACK_IMPORTED_MODULE_6__["string"]().required('Last Country is required.'),
+  country: yup__WEBPACK_IMPORTED_MODULE_6__["string"]().required('Country is required.'),
+  state: yup__WEBPACK_IMPORTED_MODULE_6__["string"]().required('State is required.'),
+  city: yup__WEBPACK_IMPORTED_MODULE_6__["string"]().required('City is required.'),
+  zipCode: yup__WEBPACK_IMPORTED_MODULE_6__["string"]().required('Zipcode is required.'),
+  address1: yup__WEBPACK_IMPORTED_MODULE_6__["string"]().required('Address 1 is required.'),
+  address2: yup__WEBPACK_IMPORTED_MODULE_6__["string"]().required('Address 2 is required.'),
+  linkedinUrl: yup__WEBPACK_IMPORTED_MODULE_6__["string"]().url('Invalid url'),
+  facebookUrl: yup__WEBPACK_IMPORTED_MODULE_6__["string"]().url('Invalid url'),
+  twitterUrl: yup__WEBPACK_IMPORTED_MODULE_6__["string"]().url('Invalid url'),
+  website: yup__WEBPACK_IMPORTED_MODULE_6__["string"]().url('Invalid url'),
+  currency: yup__WEBPACK_IMPORTED_MODULE_6__["string"]().required('Currency is required.'),
+  chartOfAccounts: yup__WEBPACK_IMPORTED_MODULE_6__["string"]().required('Chart of Accounts is required.'),
+  companyNumber: yup__WEBPACK_IMPORTED_MODULE_6__["string"]().required('Company Number is required.'),
+  taxNumber: yup__WEBPACK_IMPORTED_MODULE_6__["string"]().required('Tax Number is required.')
+});
+
+function ViewCandidatePage() {
+  const classes = useStyles();
   const router = Object(next_router__WEBPACK_IMPORTED_MODULE_4__["useRouter"])();
   const {
-    0: customer,
-    1: setCustomer
-  } = Object(react__WEBPACK_IMPORTED_MODULE_5__["useState"])([]);
+    0: dialogOpen,
+    1: setDialogOpen
+  } = Object(react__WEBPACK_IMPORTED_MODULE_5__["useState"])(false);
   const {
-    0: isLoading,
-    1: setIsLoading
-  } = Object(react__WEBPACK_IMPORTED_MODULE_5__["useState"])(true);
+    openSnackbar
+  } = Object(_lib_context__WEBPACK_IMPORTED_MODULE_10__["useSnackbar"])();
   Object(react__WEBPACK_IMPORTED_MODULE_5__["useEffect"])(() => {
     const fetchData = async () => {
       const {
         data
-      } = await _lib_api__WEBPACK_IMPORTED_MODULE_8__["default"].get("/customers");
+      } = await _lib_api__WEBPACK_IMPORTED_MODULE_9__["default"].get(`/customers/${router.query.id}`);
       setCustomer(data);
-      setIsLoading(false);
-    }; // fetchData();
+    }; //   fetchData();
 
-  }, []);
+  }, [router.query.id]);
 
-  const addCustomer = () => {
-    router.push("/customers/add");
-  };
-
-  if (!customer) {
-    return __jsx(_layout__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      pageName: "Customer",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 39
-      },
-      __self: this
-    }, __jsx(_components_loader_CircularLoader__WEBPACK_IMPORTED_MODULE_9__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 40
-      },
-      __self: this
-    }));
+  function openDialog() {
+    setDialogOpen(true);
   }
 
-  return __jsx(_layout__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    pageName: "Candidates",
+  function handleDialogClose() {
+    setDialogOpen(false);
+  }
+
+  const updateCustomerDetails = async (values, actions) => {
+    try {
+      await _lib_api__WEBPACK_IMPORTED_MODULE_9__["default"].put(`/customers`, values);
+      openSnackbar('success', 'Customer updated.');
+      router.push('/customers');
+    } catch (error) {
+      openSnackbar('error', error.response.data.errors[0]);
+      actions.setSubmitting(false);
+    }
+  }; // if (!customer) {
+  //   return <Layout pageName="View Candidate"><CircularLoader /></Layout>
+  // }
+
+
+  return __jsx(_layout__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    pageName: "View Candidate",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 97
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Container"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
-  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Box"], {
-    padding: 3,
-    clone: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: this
-  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Paper"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49
-    },
-    __self: this
-  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Box"], {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginBottom: 3,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 127
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Typography"], {
     variant: "h5",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 128
     },
     __self: this
-  }, "Candidates"), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["IconButton"], {
-    onClick: addCustomer,
+  }, "Candidates Details"), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Paper"], {
+    className: classes.accountPaper,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 129
     },
     __self: this
-  }, __jsx(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 58
-    },
-    __self: this
-  }))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Box"], {
-    padding: 3,
-    clone: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61
-    },
-    __self: this
-  }, __jsx(_components_tables__WEBPACK_IMPORTED_MODULE_6__["Table"], {
-    columns: [{
-      title: "First Name",
-      field: "firstName"
-    }, {
-      title: "Last Name",
-      field: "lastName"
-    }, {
-      title: "Phone Number",
-      field: "phone"
-    }, {
-      title: "Email",
-      field: "email"
-    }],
-    data: [{
-      firstName: "John",
-      lastName: "Deeee",
-      email: "john@co",
-      contact: "123123"
-    }, {
-      firstName: "Cary",
-      lastName: "Bow",
-      email: "john@co",
-      contact: "123123"
-    }] // data={customer}
-    ,
-    options: {
-      pageSize: 25,
-      pageSizeOptions: [5, 10, 25, 50, 75, 100],
-      toolbar: true,
-      paging: true,
-      actionsColumnIndex: -1,
-      headerStyle: {
-        backgroundColor: "#3f0f3f",
-        color: "#FFF"
-      }
-    } // isLoading={isLoading}
-    // data={query =>
-    //   new Promise((resolve, reject) => {
-    //     // let url = 'https://reqres.in/api/users?'
-    //     // url += 'per_page=' + query.pageSize
-    //     // url += '&page=' + (query.page + 1)
-    //     // fetch(url)
-    //     api.get('/customers')
-    //       // .then(response => response.json())
-    //       .then(result => {
-    //         resolve({
-    //           data: result.data,
-    //           page: result.page - 1,
-    //           totalCount: result.total,
-    //         })
-    //       })
-    //   })
-    // }
-    ,
-    actions: [{
-      icon: () => __jsx(_material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_2___default.a, {
-        color: "primary",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 115
-        },
-        __self: this
-      }),
-      tooltip: "Edit Customer",
-      onClick: (event, rowData) => {
-        router.push(`/customers/edit/[id]`, `/customers/edit/${rowData.id}`);
-      }
-    }, {
-      icon: () => __jsx(_material_ui_icons_Visibility__WEBPACK_IMPORTED_MODULE_3___default.a, {
-        color: "primary",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 125
-        },
-        __self: this
-      }),
-      tooltip: "View",
-      onClick: (event, rowData) => {
-        router.push("/candidates/view/123");
-      }
-    }],
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62
-    },
-    __self: this
-  }))))));
+  })));
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (CandidatesPage);
+/* harmony default export */ __webpack_exports__["default"] = (ViewCandidatePage);
 
 /***/ }),
 
-/***/ 6:
-/*!*****************************************!*\
-  !*** multi ./pages/candidates/index.js ***!
-  \*****************************************/
+/***/ 3:
+/*!*********************************************!*\
+  !*** multi ./pages/candidates/view/[id].js ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! F:\Shrinath\Technoark\allPros\pages\candidates\index.js */"./pages/candidates/index.js");
+module.exports = __webpack_require__(/*! F:\Shrinath\Technoark\allPros\pages\candidates\view\[id].js */"./pages/candidates/view/[id].js");
 
 
 /***/ }),
@@ -3861,14 +4778,36 @@ module.exports = require("@material-ui/core/Divider");
 
 /***/ }),
 
-/***/ "@material-ui/core/IconButton":
+/***/ "@material-ui/core/FormControl":
+/*!************************************************!*\
+  !*** external "@material-ui/core/FormControl" ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/FormControl");
+
+/***/ }),
+
+/***/ "@material-ui/core/FormHelperText":
+/*!***************************************************!*\
+  !*** external "@material-ui/core/FormHelperText" ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/FormHelperText");
+
+/***/ }),
+
+/***/ "@material-ui/core/InputLabel":
 /*!***********************************************!*\
-  !*** external "@material-ui/core/IconButton" ***!
+  !*** external "@material-ui/core/InputLabel" ***!
   \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/core/IconButton");
+module.exports = require("@material-ui/core/InputLabel");
 
 /***/ }),
 
@@ -3927,83 +4866,6 @@ module.exports = require("@material-ui/icons/AccountCircle");
 
 /***/ }),
 
-/***/ "@material-ui/icons/Add":
-/*!*****************************************!*\
-  !*** external "@material-ui/icons/Add" ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/icons/Add");
-
-/***/ }),
-
-/***/ "@material-ui/icons/AddBox":
-/*!********************************************!*\
-  !*** external "@material-ui/icons/AddBox" ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/icons/AddBox");
-
-/***/ }),
-
-/***/ "@material-ui/icons/ArrowUpward":
-/*!*************************************************!*\
-  !*** external "@material-ui/icons/ArrowUpward" ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/icons/ArrowUpward");
-
-/***/ }),
-
-/***/ "@material-ui/icons/Check":
-/*!*******************************************!*\
-  !*** external "@material-ui/icons/Check" ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/icons/Check");
-
-/***/ }),
-
-/***/ "@material-ui/icons/ChevronLeft":
-/*!*************************************************!*\
-  !*** external "@material-ui/icons/ChevronLeft" ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/icons/ChevronLeft");
-
-/***/ }),
-
-/***/ "@material-ui/icons/ChevronRight":
-/*!**************************************************!*\
-  !*** external "@material-ui/icons/ChevronRight" ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/icons/ChevronRight");
-
-/***/ }),
-
-/***/ "@material-ui/icons/Clear":
-/*!*******************************************!*\
-  !*** external "@material-ui/icons/Clear" ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/icons/Clear");
-
-/***/ }),
-
 /***/ "@material-ui/icons/DashboardOutlined":
 /*!*******************************************************!*\
   !*** external "@material-ui/icons/DashboardOutlined" ***!
@@ -4015,25 +4877,14 @@ module.exports = require("@material-ui/icons/DashboardOutlined");
 
 /***/ }),
 
-/***/ "@material-ui/icons/DeleteOutline":
-/*!***************************************************!*\
-  !*** external "@material-ui/icons/DeleteOutline" ***!
-  \***************************************************/
+/***/ "@material-ui/icons/Delete":
+/*!********************************************!*\
+  !*** external "@material-ui/icons/Delete" ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/icons/DeleteOutline");
-
-/***/ }),
-
-/***/ "@material-ui/icons/Edit":
-/*!******************************************!*\
-  !*** external "@material-ui/icons/Edit" ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/icons/Edit");
+module.exports = require("@material-ui/icons/Delete");
 
 /***/ }),
 
@@ -4070,58 +4921,14 @@ module.exports = require("@material-ui/icons/ExpandMore");
 
 /***/ }),
 
-/***/ "@material-ui/icons/FilterList":
-/*!************************************************!*\
-  !*** external "@material-ui/icons/FilterList" ***!
-  \************************************************/
+/***/ "@material-ui/icons/Lock":
+/*!******************************************!*\
+  !*** external "@material-ui/icons/Lock" ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/icons/FilterList");
-
-/***/ }),
-
-/***/ "@material-ui/icons/FirstPage":
-/*!***********************************************!*\
-  !*** external "@material-ui/icons/FirstPage" ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/icons/FirstPage");
-
-/***/ }),
-
-/***/ "@material-ui/icons/KeyboardArrowLeft":
-/*!*******************************************************!*\
-  !*** external "@material-ui/icons/KeyboardArrowLeft" ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/icons/KeyboardArrowLeft");
-
-/***/ }),
-
-/***/ "@material-ui/icons/KeyboardArrowRight":
-/*!********************************************************!*\
-  !*** external "@material-ui/icons/KeyboardArrowRight" ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/icons/KeyboardArrowRight");
-
-/***/ }),
-
-/***/ "@material-ui/icons/LastPage":
-/*!**********************************************!*\
-  !*** external "@material-ui/icons/LastPage" ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/icons/LastPage");
+module.exports = require("@material-ui/icons/Lock");
 
 /***/ }),
 
@@ -4133,28 +4940,6 @@ module.exports = require("@material-ui/icons/LastPage");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/icons/People");
-
-/***/ }),
-
-/***/ "@material-ui/icons/Remove":
-/*!********************************************!*\
-  !*** external "@material-ui/icons/Remove" ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/icons/Remove");
-
-/***/ }),
-
-/***/ "@material-ui/icons/SaveAlt":
-/*!*********************************************!*\
-  !*** external "@material-ui/icons/SaveAlt" ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/icons/SaveAlt");
 
 /***/ }),
 
@@ -4180,28 +4965,6 @@ module.exports = require("@material-ui/icons/Storage");
 
 /***/ }),
 
-/***/ "@material-ui/icons/ViewColumn":
-/*!************************************************!*\
-  !*** external "@material-ui/icons/ViewColumn" ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/icons/ViewColumn");
-
-/***/ }),
-
-/***/ "@material-ui/icons/Visibility":
-/*!************************************************!*\
-  !*** external "@material-ui/icons/Visibility" ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/icons/Visibility");
-
-/***/ }),
-
 /***/ "@material-ui/icons/Work":
 /*!******************************************!*\
   !*** external "@material-ui/icons/Work" ***!
@@ -4210,6 +4973,17 @@ module.exports = require("@material-ui/icons/Visibility");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/icons/Work");
+
+/***/ }),
+
+/***/ "@material-ui/styles":
+/*!**************************************!*\
+  !*** external "@material-ui/styles" ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/styles");
 
 /***/ }),
 
@@ -4323,14 +5097,25 @@ module.exports = require("core-js/library/fn/promise");
 
 /***/ }),
 
-/***/ "material-table":
-/*!*********************************!*\
-  !*** external "material-table" ***!
-  \*********************************/
+/***/ "formik":
+/*!*************************!*\
+  !*** external "formik" ***!
+  \*************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("material-table");
+module.exports = require("formik");
+
+/***/ }),
+
+/***/ "formik-material-ui":
+/*!*************************************!*\
+  !*** external "formik-material-ui" ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("formik-material-ui");
 
 /***/ }),
 
@@ -4378,6 +5163,17 @@ module.exports = require("react");
 
 /***/ }),
 
+/***/ "react-country-region-selector":
+/*!************************************************!*\
+  !*** external "react-country-region-selector" ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-country-region-selector");
+
+/***/ }),
+
 /***/ "url":
 /*!**********************!*\
   !*** external "url" ***!
@@ -4387,7 +5183,18 @@ module.exports = require("react");
 
 module.exports = require("url");
 
+/***/ }),
+
+/***/ "yup":
+/*!**********************!*\
+  !*** external "yup" ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("yup");
+
 /***/ })
 
 /******/ });
-//# sourceMappingURL=candidates.js.map
+//# sourceMappingURL=[id].js.map

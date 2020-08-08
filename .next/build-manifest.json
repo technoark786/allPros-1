@@ -16,7 +16,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
+<<<<<<< HEAD
     "/owners/view/[id]": [
+=======
+    "/candidates/view/[id]": [
+>>>>>>> abd539aa710407a3c75383faf4256a6378a53b11
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
