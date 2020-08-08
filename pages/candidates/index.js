@@ -1,44 +1,51 @@
-import { Box, Container, IconButton, Typography, Paper } from '@material-ui/core';
-import AddIcon from '@material-ui/icons/Add';
-import EditIcon from '@material-ui/icons/Edit';
-import VisibilityIcon from '@material-ui/icons/Visibility';
-import { useRouter } from 'next/router';
-import React from 'react';
-import { Table } from '../../components/tables';
-import Layout from '../../layout';
-import { useEffect } from 'react';
-import { useState } from 'react';
-import api from '../../lib/api';
-import CircularLoader from '../../components/loader/CircularLoader';
+import {
+  Box,
+  Container,
+  IconButton,
+  Typography,
+  Paper,
+} from "@material-ui/core";
+import AddIcon from "@material-ui/icons/Add";
+import EditIcon from "@material-ui/icons/Edit";
+import VisibilityIcon from "@material-ui/icons/Visibility";
+import { useRouter } from "next/router";
+import React from "react";
+import { Table } from "../../components/tables";
+import Layout from "../../layout";
+import { useEffect } from "react";
+import { useState } from "react";
+import api from "../../lib/api";
+import CircularLoader from "../../components/loader/CircularLoader";
 
 function CandidatesPage() {
   const router = useRouter();
   const [customer, setCustomer] = useState([]);
-  const [isLoading,setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
-      const { data } = await api.get('/customers');
+      const { data } = await api.get("/customers");
       setCustomer(data);
       setIsLoading(false);
     };
-    fetchData();
+    // fetchData();
   }, []);
   const addCustomer = () => {
-    router.push('/customers/add');
+    router.push("/customers/add");
   };
 
   if (!customer) {
-    return <Layout pageName="Customer"><CircularLoader /></Layout>
+    return (
+      <Layout pageName="Customer">
+        <CircularLoader />
+      </Layout>
+    );
   }
 
   return (
     <Layout pageName="Candidates">
       <Container>
-        <Box
-          padding={3}
-          clone
-        >
+        <Box padding={3} clone>
           <Paper>
             <Box
               display="flex"
@@ -46,9 +53,7 @@ function CandidatesPage() {
               alignItems="center"
               marginBottom={3}
             >
-              <Typography variant="h5">
-                Candidates
-              </Typography>
+              <Typography variant="h5">Candidates</Typography>
               <IconButton onClick={addCustomer}>
                 <AddIcon />
               </IconButton>
@@ -56,22 +61,36 @@ function CandidatesPage() {
             <Box padding={3} clone>
               <Table
                 columns={[
-                  { title: 'Name', field: 'name' },
-                  { title: 'Email', field: 'email' },
-                  { title: 'Cantact', field: 'contact'},
+                  { title: "First Name", field: "firstName" },
+                  { title: "Last Name", field: "lastName" },
+                  { title: "Phone Number", field: "phone" },
+                  { title: "Email", field: "email" },
                 ]}
-                data={[{name:"John",email:"john@co",contact:"123123"}]}
+                data={[
+                  {
+                    firstName: "John",
+                    lastName: "Deeee",
+                    email: "john@co",
+                    contact: "123123",
+                  },
+                  {
+                    firstName: "Cary",
+                    lastName: "Bow",
+                    email: "john@co",
+                    contact: "123123",
+                  },
+                ]}
                 // data={customer}
                 options={{
                   pageSize: 25,
-                  pageSizeOptions: [ 5, 10, 25, 50 , 75, 100 ],
+                  pageSizeOptions: [5, 10, 25, 50, 75, 100],
                   toolbar: true,
                   paging: true,
-                  actionsColumnIndex:-1,
+                  actionsColumnIndex: -1,
                   headerStyle: {
-                    backgroundColor: '#3f0f3f',
-                    color: '#FFF'
-                  }
+                    backgroundColor: "#3f0f3f",
+                    color: "#FFF",
+                  },
                 }}
                 // isLoading={isLoading}
                 // data={query =>
@@ -94,16 +113,21 @@ function CandidatesPage() {
                 actions={[
                   {
                     icon: () => <EditIcon color="primary" />,
-                    tooltip: 'Edit Customer',
+                    tooltip: "Edit Customer",
                     onClick: (event, rowData) => {
-                      router.push(`/customers/edit/[id]`, `/customers/edit/${rowData.id}`);
+                      router.push(
+                        `/customers/edit/[id]`,
+                        `/customers/edit/${rowData.id}`
+                      );
                     },
                   },
                   {
                     icon: () => <VisibilityIcon color="primary" />,
-                    tooltip: 'View',
-                    onClick: (event, rowData) => { setDialogOpen(true); setUsers(rowData.users) },
-                }
+                    tooltip: "View",
+                    onClick: (event, rowData) => {
+                      router.push("/candidates/view/123");
+                    },
+                  },
                 ]}
               />
             </Box>

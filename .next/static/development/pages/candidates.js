@@ -98139,7 +98139,7 @@ function CandidatesPage() {
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return _lib_api__WEBPACK_IMPORTED_MODULE_10__["default"].get('/customers');
+                return _lib_api__WEBPACK_IMPORTED_MODULE_10__["default"].get("/customers");
 
               case 2:
                 _ref2 = _context.sent;
@@ -98158,13 +98158,12 @@ function CandidatesPage() {
       return function fetchData() {
         return _ref.apply(this, arguments);
       };
-    }();
+    }(); // fetchData();
 
-    fetchData();
   }, []);
 
   var addCustomer = function addCustomer() {
-    router.push('/customers/add');
+    router.push("/customers/add");
   };
 
   if (!customer) {
@@ -98172,13 +98171,13 @@ function CandidatesPage() {
       pageName: "Customer",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
+        lineNumber: 39
       },
       __self: this
     }, __jsx(_components_loader_CircularLoader__WEBPACK_IMPORTED_MODULE_11__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
+        lineNumber: 40
       },
       __self: this
     }));
@@ -98188,13 +98187,13 @@ function CandidatesPage() {
     pageName: "Candidates",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 46
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Container"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 47
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
@@ -98202,13 +98201,13 @@ function CandidatesPage() {
     clone: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 48
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Paper"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 49
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
@@ -98218,27 +98217,27 @@ function CandidatesPage() {
     marginBottom: 3,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 50
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
     variant: "h5",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 56
     },
     __self: this
   }, "Candidates"), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
     onClick: addCustomer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 57
     },
     __self: this
   }, __jsx(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_3___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 58
     },
     __self: this
   }))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
@@ -98246,22 +98245,31 @@ function CandidatesPage() {
     clone: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 61
     },
     __self: this
   }, __jsx(_components_tables__WEBPACK_IMPORTED_MODULE_8__["Table"], {
     columns: [{
-      title: 'Name',
-      field: 'name'
+      title: "First Name",
+      field: "firstName"
     }, {
-      title: 'Email',
-      field: 'email'
+      title: "Last Name",
+      field: "lastName"
     }, {
-      title: 'Cantact',
-      field: 'contact'
+      title: "Phone Number",
+      field: "phone"
+    }, {
+      title: "Email",
+      field: "email"
     }],
     data: [{
-      name: "John",
+      firstName: "John",
+      lastName: "Deeee",
+      email: "john@co",
+      contact: "123123"
+    }, {
+      firstName: "Cary",
+      lastName: "Bow",
       email: "john@co",
       contact: "123123"
     }] // data={customer}
@@ -98273,8 +98281,8 @@ function CandidatesPage() {
       paging: true,
       actionsColumnIndex: -1,
       headerStyle: {
-        backgroundColor: '#3f0f3f',
-        color: '#FFF'
+        backgroundColor: "#3f0f3f",
+        color: "#FFF"
       }
     } // isLoading={isLoading}
     // data={query =>
@@ -98301,12 +98309,12 @@ function CandidatesPage() {
           color: "primary",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 96
+            lineNumber: 115
           },
           __self: this
         });
       },
-      tooltip: 'Edit Customer',
+      tooltip: "Edit Customer",
       onClick: function onClick(event, rowData) {
         router.push("/customers/edit/[id]", "/customers/edit/".concat(rowData.id));
       }
@@ -98316,20 +98324,19 @@ function CandidatesPage() {
           color: "primary",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 103
+            lineNumber: 125
           },
           __self: this
         });
       },
-      tooltip: 'View',
+      tooltip: "View",
       onClick: function onClick(event, rowData) {
-        setDialogOpen(true);
-        setUsers(rowData.users);
+        router.push("/candidates/view/123");
       }
     }],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 62
     },
     __self: this
   }))))));
@@ -98339,7 +98346,7 @@ function CandidatesPage() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fcandidates&absolutePagePath=F%3A%5CShrinath%5CTechnoark%5CallPros%5Cpages%5Ccandidates%5Cindex.js ***!
   \************************************************************************************************************************************************/
@@ -98362,5 +98369,5 @@ module.exports = dll_6b5a3ee2368b61971f52;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=candidates.js.map
