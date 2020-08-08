@@ -10,25 +10,14 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import api from '../../lib/api';
 import CircularLoader from '../../components/loader/CircularLoader';
+import AcUnitIcon from '@material-ui/icons/AcUnit';
 
 function CandidatesPage() {
   const router = useRouter();
-  const [customer, setCustomer] = useState([]);
+  const [candidates, setCandidates] = useState([{id:1,name:"John",email:"john@co",contact:"123123"}]);
   const [isLoading,setIsLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const { data } = await api.get('/customers');
-      setCustomer(data);
-      setIsLoading(false);
-    };
-    fetchData();
-  }, []);
-  const addCustomer = () => {
-    router.push('/customers/add');
-  };
-
-  if (!customer) {
+  if (!candidates) {
     return <Layout pageName="Customer"><CircularLoader /></Layout>
   }
 
@@ -49,9 +38,9 @@ function CandidatesPage() {
               <Typography variant="h5">
                 Candidates
               </Typography>
-              <IconButton onClick={addCustomer}>
+              {/* <IconButton onClick={addCustomer}>
                 <AddIcon />
-              </IconButton>
+              </IconButton> */}
             </Box>
             <Box padding={3} clone>
               <Table
@@ -60,8 +49,7 @@ function CandidatesPage() {
                   { title: 'Email', field: 'email' },
                   { title: 'Cantact', field: 'contact'},
                 ]}
-                data={[{name:"John",email:"john@co",contact:"123123"}]}
-                // data={customer}
+                data={candidates}
                 options={{
                   pageSize: 25,
                   pageSizeOptions: [ 5, 10, 25, 50 , 75, 100 ],
@@ -92,6 +80,13 @@ function CandidatesPage() {
                 //   })
                 // }
                 actions={[
+                  {
+                  icon: () => <AcUnitIcon color="primary" />,
+                  tooltip: 'Screen Test',
+                  onClick: (event, rowData) => {
+                    router.push(`/candidates/screenTest/${rowData.id}`);
+                  },
+                },
                   {
                     icon: () => <EditIcon color="primary" />,
                     tooltip: 'Edit Customer',
