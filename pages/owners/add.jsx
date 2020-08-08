@@ -7,7 +7,7 @@ import * as yup from 'yup';
 import Layout from '../../layout';
 import api from '../../lib/api';
 import { useSnackbar } from '../../lib/context';
-import MembersForm from '../../components/forms/MembersForm';
+// import MembersForm from '../../components/forms/MembersForm';
 
 const useStyles = makeStyles({
   accountPaper: {
@@ -64,12 +64,12 @@ function AddMemberPage() {
       <Container>
         <Paper className={classes.accountPaper}>
           <Typography variant="h5">Member Details</Typography>
-          <Formik
+          {/* <Formik
             validationSchema={validationSchema}
             initialValues={initialValues}
             onSubmit={handleSubmit}
             component={MembersForm}
-          />
+          /> */}
         </Paper>
       </Container>
     </Layout>
