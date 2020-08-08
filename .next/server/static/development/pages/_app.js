@@ -133,7 +133,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_context__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../lib/context */ "./lib/context.js");
 
 
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\components\\snackbar\\MainSnackbar.jsx";
+var _jsxFileName = "/home/bipin/allPros/components/snackbar/MainSnackbar.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_14___default.a.createElement;
 
 
@@ -300,7 +300,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _MainSnackbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MainSnackbar */ "./components/snackbar/MainSnackbar.jsx");
 /* harmony import */ var _lib_context__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../lib/context */ "./lib/context.js");
 
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\components\\snackbar\\SnackbarProvider.jsx";
+var _jsxFileName = "/home/bipin/allPros/components/snackbar/SnackbarProvider.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -397,7 +397,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\context\\authContext.js";
+var _jsxFileName = "/home/bipin/allPros/context/authContext.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
@@ -473,7 +473,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _lib_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../lib/api */ "./lib/api.js");
 /* harmony import */ var _authContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./authContext */ "./context/authContext.js");
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\context\\globalSettings.js";
+var _jsxFileName = "/home/bipin/allPros/context/globalSettings.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -2700,7 +2700,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _context_authContext__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../context/authContext */ "./context/authContext.js");
 /* harmony import */ var _context_globalSettings__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../context/globalSettings */ "./context/globalSettings.js");
 
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\pages\\_app.jsx";
+var _jsxFileName = "/home/bipin/allPros/pages/_app.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement;
 
 

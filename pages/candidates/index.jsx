@@ -1,4 +1,3 @@
-<<<<<<< HEAD:pages/candidates/index.jsx
 import { Box, Container, IconButton, Typography, Paper } from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add';
 import EditIcon from '@material-ui/icons/Edit';
@@ -12,58 +11,15 @@ import { useState } from 'react';
 import api from '../../lib/api';
 import CircularLoader from '../../components/loader/CircularLoader';
 import AcUnitIcon from '@material-ui/icons/AcUnit';
+import DescriptionIcon from '@material-ui/icons/Description';
 
 function CandidatesPage() {
   const router = useRouter();
-  const [candidates, setCandidates] = useState([{id:1,name:"John",email:"john@co",contact:"123123"}]);
+  const [candidates, setCandidates] = useState([{id:1,firstName:"John",lastName:'Smith',email:"john@co",phone:"987123123"}]);
   const [isLoading,setIsLoading] = useState(true);
 
   if (!candidates) {
     return <Layout pageName="Customer"><CircularLoader /></Layout>
-=======
-import {
-  Box,
-  Container,
-  IconButton,
-  Typography,
-  Paper,
-} from "@material-ui/core";
-import AddIcon from "@material-ui/icons/Add";
-import EditIcon from "@material-ui/icons/Edit";
-import VisibilityIcon from "@material-ui/icons/Visibility";
-import { useRouter } from "next/router";
-import React from "react";
-import { Table } from "../../components/tables";
-import Layout from "../../layout";
-import { useEffect } from "react";
-import { useState } from "react";
-import api from "../../lib/api";
-import CircularLoader from "../../components/loader/CircularLoader";
-
-function CandidatesPage() {
-  const router = useRouter();
-  const [customer, setCustomer] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const { data } = await api.get("/customers");
-      setCustomer(data);
-      setIsLoading(false);
-    };
-    // fetchData();
-  }, []);
-  const addCustomer = () => {
-    router.push("/customers/add");
-  };
-
-  if (!customer) {
-    return (
-      <Layout pageName="Customer">
-        <CircularLoader />
-      </Layout>
-    );
->>>>>>> abd539aa710407a3c75383faf4256a6378a53b11:pages/candidates/index.js
   }
 
   return (
@@ -77,15 +33,10 @@ function CandidatesPage() {
               alignItems="center"
               marginBottom={3}
             >
-<<<<<<< HEAD:pages/candidates/index.jsx
               <Typography variant="h5">
                 Candidates
               </Typography>
               {/* <IconButton onClick={addCustomer}>
-=======
-              <Typography variant="h5">Candidates</Typography>
-              <IconButton onClick={addCustomer}>
->>>>>>> abd539aa710407a3c75383faf4256a6378a53b11:pages/candidates/index.js
                 <AddIcon />
               </IconButton> */}
             </Box>
@@ -97,25 +48,7 @@ function CandidatesPage() {
                   { title: "Phone Number", field: "phone" },
                   { title: "Email", field: "email" },
                 ]}
-                data={[
-                  {
-                    firstName: "John",
-                    lastName: "Deeee",
-                    email: "john@co",
-                    contact: "123123",
-                  },
-                  {
-                    firstName: "Cary",
-                    lastName: "Bow",
-                    email: "john@co",
-                    contact: "123123",
-                  },
-                ]}
-<<<<<<< HEAD:pages/candidates/index.jsx
                 data={candidates}
-=======
-                // data={customer}
->>>>>>> abd539aa710407a3c75383faf4256a6378a53b11:pages/candidates/index.js
                 options={{
                   pageSize: 25,
                   pageSizeOptions: [5, 10, 25, 50, 75, 100],
@@ -154,20 +87,10 @@ function CandidatesPage() {
                   },
                 },
                   {
-                    icon: () => <EditIcon color="primary" />,
-                    tooltip: "Edit Customer",
+                    icon: () => <DescriptionIcon color="primary" />,
+                    tooltip: "Form",
                     onClick: (event, rowData) => {
-                      router.push(
-                        `/customers/edit/[id]`,
-                        `/customers/edit/${rowData.id}`
-                      );
-                    },
-                  },
-                  {
-                    icon: () => <VisibilityIcon color="primary" />,
-                    tooltip: "View",
-                    onClick: (event, rowData) => {
-                      router.push("/candidates/view/123");
+                      router.push("/candidates/form/1");
                     },
                   },
                 ]}

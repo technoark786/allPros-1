@@ -1391,7 +1391,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_theme__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../lib/theme */ "./lib/theme.js");
 
 
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\pages\\_document.jsx";
+var _jsxFileName = "/home/bipin/allPros/pages/_document.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
 
 

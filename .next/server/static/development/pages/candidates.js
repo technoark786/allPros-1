@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -107,7 +107,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\components\\loader\\CircularLoader.jsx";
+var _jsxFileName = "/home/bipin/allPros/components/loader/CircularLoader.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -191,7 +191,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_icons_AccountCircle__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_AccountCircle__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__);
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\components\\menu\\CustomMenu.jsx";
+var _jsxFileName = "/home/bipin/allPros/components/menu/CustomMenu.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -344,7 +344,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! prop-types */ "prop-types");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_19__);
 
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\components\\tables\\Table.jsx";
+var _jsxFileName = "/home/bipin/allPros/components/tables/Table.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_17___default.a.createElement;
 
 
@@ -568,7 +568,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\components\\tables\\TablePaginationActions.jsx";
+var _jsxFileName = "/home/bipin/allPros/components/tables/TablePaginationActions.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 
 
@@ -751,7 +751,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\context\\authContext.js";
+var _jsxFileName = "/home/bipin/allPros/context/authContext.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
@@ -838,7 +838,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _context_authContext__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../context/authContext */ "./context/authContext.js");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/router */ "next/router");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_9__);
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\layout\\Header.jsx";
+var _jsxFileName = "/home/bipin/allPros/layout/Header.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
@@ -945,7 +945,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Header */ "./layout/Header.jsx");
 /* harmony import */ var _Sidebar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Sidebar */ "./layout/Sidebar.jsx");
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\layout\\Layout.jsx";
+var _jsxFileName = "/home/bipin/allPros/layout/Layout.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement;
 
 
@@ -1047,7 +1047,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _lib_drawer_data__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../lib/drawer-data */ "./lib/drawer-data.jsx");
 
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\layout\\Sidebar.jsx";
+var _jsxFileName = "/home/bipin/allPros/layout/Sidebar.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 
 
@@ -1446,7 +1446,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_icons_People__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_People__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _material_ui_icons_Work__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/Work */ "@material-ui/icons/Work");
 /* harmony import */ var _material_ui_icons_Work__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Work__WEBPACK_IMPORTED_MODULE_6__);
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\lib\\drawer-data.jsx";
+var _jsxFileName = "/home/bipin/allPros/lib/drawer-data.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -3586,10 +3586,10 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./pages/candidates/index.js":
-/*!***********************************!*\
-  !*** ./pages/candidates/index.js ***!
-  \***********************************/
+/***/ "./pages/candidates/index.jsx":
+/*!************************************!*\
+  !*** ./pages/candidates/index.jsx ***!
+  \************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3611,8 +3611,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _layout__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../layout */ "./layout/index.js");
 /* harmony import */ var _lib_api__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../lib/api */ "./lib/api.js");
 /* harmony import */ var _components_loader_CircularLoader__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/loader/CircularLoader */ "./components/loader/CircularLoader.jsx");
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\pages\\candidates\\index.js";
+/* harmony import */ var _material_ui_icons_AcUnit__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/icons/AcUnit */ "@material-ui/icons/AcUnit");
+/* harmony import */ var _material_ui_icons_AcUnit__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_AcUnit__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _material_ui_icons_Description__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/icons/Description */ "@material-ui/icons/Description");
+/* harmony import */ var _material_ui_icons_Description__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Description__WEBPACK_IMPORTED_MODULE_11__);
+var _jsxFileName = "/home/bipin/allPros/pages/candidates/index.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
+
+
 
 
 
@@ -3629,40 +3635,32 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 function CandidatesPage() {
   const router = Object(next_router__WEBPACK_IMPORTED_MODULE_4__["useRouter"])();
   const {
-    0: customer,
-    1: setCustomer
-  } = Object(react__WEBPACK_IMPORTED_MODULE_5__["useState"])([]);
+    0: candidates,
+    1: setCandidates
+  } = Object(react__WEBPACK_IMPORTED_MODULE_5__["useState"])([{
+    id: 1,
+    firstName: "John",
+    lastName: 'Smith',
+    email: "john@co",
+    phone: "987123123"
+  }]);
   const {
     0: isLoading,
     1: setIsLoading
   } = Object(react__WEBPACK_IMPORTED_MODULE_5__["useState"])(true);
-  Object(react__WEBPACK_IMPORTED_MODULE_5__["useEffect"])(() => {
-    const fetchData = async () => {
-      const {
-        data
-      } = await _lib_api__WEBPACK_IMPORTED_MODULE_8__["default"].get("/customers");
-      setCustomer(data);
-      setIsLoading(false);
-    }; // fetchData();
 
-  }, []);
-
-  const addCustomer = () => {
-    router.push("/customers/add");
-  };
-
-  if (!customer) {
+  if (!candidates) {
     return __jsx(_layout__WEBPACK_IMPORTED_MODULE_7__["default"], {
       pageName: "Customer",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 39
+        lineNumber: 22
       },
       __self: this
     }, __jsx(_components_loader_CircularLoader__WEBPACK_IMPORTED_MODULE_9__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40
+        lineNumber: 22
       },
       __self: this
     }));
@@ -3672,13 +3670,13 @@ function CandidatesPage() {
     pageName: "Candidates",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 26
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Container"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 27
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Box"], {
@@ -3686,13 +3684,13 @@ function CandidatesPage() {
     clone: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 28
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Paper"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 29
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Box"], {
@@ -3702,35 +3700,22 @@ function CandidatesPage() {
     marginBottom: 3,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 30
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Typography"], {
     variant: "h5",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 36
     },
     __self: this
-  }, "Candidates"), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["IconButton"], {
-    onClick: addCustomer,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 57
-    },
-    __self: this
-  }, __jsx(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 58
-    },
-    __self: this
-  }))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Box"], {
+  }, "Candidates")), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Box"], {
     padding: 3,
     clone: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 43
     },
     __self: this
   }, __jsx(_components_tables__WEBPACK_IMPORTED_MODULE_6__["Table"], {
@@ -3747,18 +3732,7 @@ function CandidatesPage() {
       title: "Email",
       field: "email"
     }],
-    data: [{
-      firstName: "John",
-      lastName: "Deeee",
-      email: "john@co",
-      contact: "123123"
-    }, {
-      firstName: "Cary",
-      lastName: "Bow",
-      email: "john@co",
-      contact: "123123"
-    }] // data={customer}
-    ,
+    data: candidates,
     options: {
       pageSize: 25,
       pageSizeOptions: [5, 10, 25, 50, 75, 100],
@@ -3789,35 +3763,35 @@ function CandidatesPage() {
     // }
     ,
     actions: [{
-      icon: () => __jsx(_material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      icon: () => __jsx(_material_ui_icons_AcUnit__WEBPACK_IMPORTED_MODULE_10___default.a, {
         color: "primary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 115
+          lineNumber: 83
         },
         __self: this
       }),
-      tooltip: "Edit Customer",
+      tooltip: 'Screen Test',
       onClick: (event, rowData) => {
-        router.push(`/customers/edit/[id]`, `/customers/edit/${rowData.id}`);
+        router.push(`/candidates/screenTest/${rowData.id}`);
       }
     }, {
-      icon: () => __jsx(_material_ui_icons_Visibility__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      icon: () => __jsx(_material_ui_icons_Description__WEBPACK_IMPORTED_MODULE_11___default.a, {
         color: "primary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 125
+          lineNumber: 90
         },
         __self: this
       }),
-      tooltip: "View",
+      tooltip: "Form",
       onClick: (event, rowData) => {
-        router.push("/candidates/view/123");
+        router.push("/candidates/form/1");
       }
     }],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 44
     },
     __self: this
   }))))));
@@ -3827,14 +3801,14 @@ function CandidatesPage() {
 
 /***/ }),
 
-/***/ 6:
-/*!*****************************************!*\
-  !*** multi ./pages/candidates/index.js ***!
-  \*****************************************/
+/***/ 3:
+/*!******************************************!*\
+  !*** multi ./pages/candidates/index.jsx ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! F:\Shrinath\Technoark\allPros\pages\candidates\index.js */"./pages/candidates/index.js");
+module.exports = __webpack_require__(/*! /home/bipin/allPros/pages/candidates/index.jsx */"./pages/candidates/index.jsx");
 
 
 /***/ }),
@@ -3913,6 +3887,17 @@ module.exports = require("@material-ui/core/Select");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/styles");
+
+/***/ }),
+
+/***/ "@material-ui/icons/AcUnit":
+/*!********************************************!*\
+  !*** external "@material-ui/icons/AcUnit" ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/AcUnit");
 
 /***/ }),
 
@@ -4023,6 +4008,17 @@ module.exports = require("@material-ui/icons/DashboardOutlined");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/icons/DeleteOutline");
+
+/***/ }),
+
+/***/ "@material-ui/icons/Description":
+/*!*************************************************!*\
+  !*** external "@material-ui/icons/Description" ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/Description");
 
 /***/ }),
 

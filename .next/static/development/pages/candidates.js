@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\candidates.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/candidates.js"],{
 
 /***/ "./components/loader/CircularLoader.jsx":
 /*!**********************************************!*\
@@ -13,7 +13,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\components\\loader\\CircularLoader.jsx";
+var _jsxFileName = "/home/bipin/allPros/components/loader/CircularLoader.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -93,7 +93,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_icons_AccountCircle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/AccountCircle */ "./node_modules/@material-ui/icons/AccountCircle.js");
 /* harmony import */ var _material_ui_icons_AccountCircle__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_AccountCircle__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\components\\menu\\CustomMenu.jsx";
+var _jsxFileName = "/home/bipin/allPros/components/menu/CustomMenu.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -247,7 +247,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_19__);
 
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\components\\tables\\Table.jsx";
+var _jsxFileName = "/home/bipin/allPros/components/tables/Table.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_17___default.a.createElement;
 
 
@@ -503,7 +503,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\components\\tables\\TablePaginationActions.jsx";
+var _jsxFileName = "/home/bipin/allPros/components/tables/TablePaginationActions.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 
 
@@ -686,7 +686,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\context\\authContext.js";
+var _jsxFileName = "/home/bipin/allPros/context/authContext.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
@@ -771,7 +771,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _context_authContext__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../context/authContext */ "./context/authContext.js");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_9__);
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\layout\\Header.jsx";
+var _jsxFileName = "/home/bipin/allPros/layout/Header.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
@@ -875,7 +875,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Header */ "./layout/Header.jsx");
 /* harmony import */ var _Sidebar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Sidebar */ "./layout/Sidebar.jsx");
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\layout\\Layout.jsx";
+var _jsxFileName = "/home/bipin/allPros/layout/Layout.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement;
 
 
@@ -976,7 +976,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_drawer_data__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../lib/drawer-data */ "./lib/drawer-data.jsx");
 
 
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\layout\\Sidebar.jsx";
+var _jsxFileName = "/home/bipin/allPros/layout/Sidebar.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement;
 
 
@@ -1383,7 +1383,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_icons_People__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_People__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _material_ui_icons_Work__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/Work */ "./node_modules/@material-ui/icons/Work.js");
 /* harmony import */ var _material_ui_icons_Work__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Work__WEBPACK_IMPORTED_MODULE_6__);
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\lib\\drawer-data.jsx";
+var _jsxFileName = "/home/bipin/allPros/lib/drawer-data.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -1801,58 +1801,6 @@ function _createClass(Constructor, protoProps, staticProps) {
 }
 
 module.exports = _createClass;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js":
-/*!*****************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js ***!
-  \*****************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _asyncToGenerator; });
-/* harmony import */ var _core_js_promise__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js");
-/* harmony import */ var _core_js_promise__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_promise__WEBPACK_IMPORTED_MODULE_0__);
-
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
-  try {
-    var info = gen[key](arg);
-    var value = info.value;
-  } catch (error) {
-    reject(error);
-    return;
-  }
-
-  if (info.done) {
-    resolve(value);
-  } else {
-    _core_js_promise__WEBPACK_IMPORTED_MODULE_0___default.a.resolve(value).then(_next, _throw);
-  }
-}
-
-function _asyncToGenerator(fn) {
-  return function () {
-    var self = this,
-        args = arguments;
-    return new _core_js_promise__WEBPACK_IMPORTED_MODULE_0___default.a(function (resolve, reject) {
-      var gen = fn.apply(self, args);
-
-      function _next(value) {
-        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
-      }
-
-      function _throw(err) {
-        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
-      }
-
-      _next(undefined);
-    });
-  };
-}
 
 /***/ }),
 
@@ -41844,6 +41792,35 @@ exports.default = _default;
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/icons/AcUnit.js":
+/*!***************************************************!*\
+  !*** ./node_modules/@material-ui/icons/AcUnit.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
+
+var _default = (0, _createSvgIcon.default)(_react.default.createElement("path", {
+  d: "M22 11h-4.17l3.24-3.24-1.41-1.42L15 11h-2V9l4.66-4.66-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93 6.34 4.34 11 9v2H9L4.34 6.34 2.93 7.76 6.17 11H2v2h4.17l-3.24 3.24 1.41 1.42L9 13h2v2l-4.66 4.66 1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24 1.42-1.41L13 15v-2h2l4.66 4.66 1.41-1.42L17.83 13H22z"
+}), 'AcUnit');
+
+exports.default = _default;
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/icons/AccountCircle.js":
 /*!**********************************************************!*\
   !*** ./node_modules/@material-ui/icons/AccountCircle.js ***!
@@ -42129,6 +42106,35 @@ var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/crea
 var _default = (0, _createSvgIcon.default)(_react.default.createElement("path", {
   d: "M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4z"
 }), 'DeleteOutline');
+
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/icons/Description.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@material-ui/icons/Description.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
+
+var _default = (0, _createSvgIcon.default)(_react.default.createElement("path", {
+  d: "M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"
+}), 'Description');
 
 exports.default = _default;
 
@@ -77665,20 +77671,20 @@ function memoizeOne(resultFn, isEqual) {
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcandidates&absolutePagePath=F%3A%5CShrinath%5CTechnoark%5CallPros%5Cpages%5Ccandidates%5Cindex.js!./":
-/*!********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcandidates&absolutePagePath=F%3A%5CShrinath%5CTechnoark%5CallPros%5Cpages%5Ccandidates%5Cindex.js ***!
-  \********************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcandidates&absolutePagePath=%2Fhome%2Fbipin%2FallPros%2Fpages%2Fcandidates%2Findex.jsx!./":
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcandidates&absolutePagePath=%2Fhome%2Fbipin%2FallPros%2Fpages%2Fcandidates%2Findex.jsx ***!
+  \*********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
     (window.__NEXT_P=window.__NEXT_P||[]).push(["/candidates", function() {
-      var mod = __webpack_require__(/*! ./pages/candidates/index.js */ "./pages/candidates/index.js")
+      var mod = __webpack_require__(/*! ./pages/candidates/index.jsx */ "./pages/candidates/index.jsx")
       if(true) {
-        module.hot.accept(/*! ./pages/candidates/index.js */ "./pages/candidates/index.js", function() {
+        module.hot.accept(/*! ./pages/candidates/index.jsx */ "./pages/candidates/index.jsx", function() {
           if(!next.router.components["/candidates"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/candidates/index.js */ "./pages/candidates/index.js")
+          var updatedPage = __webpack_require__(/*! ./pages/candidates/index.jsx */ "./pages/candidates/index.jsx")
           next.router.update("/candidates", updatedPage)
         })
       }
@@ -80377,12 +80383,12 @@ function setNormalizedScrollLeft(element, scrollLeft, direction) {
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_6b5a3ee2368b61971f52 ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_40e5610532f3b6b970d9 ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_6b5a3ee2368b61971f52 */ "dll-reference dll_6b5a3ee2368b61971f52"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_40e5610532f3b6b970d9 */ "dll-reference dll_40e5610532f3b6b970d9"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -83668,12 +83674,12 @@ module.exports = exports['default'];
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_6b5a3ee2368b61971f52 ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_40e5610532f3b6b970d9 ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_6b5a3ee2368b61971f52 */ "dll-reference dll_6b5a3ee2368b61971f52"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_40e5610532f3b6b970d9 */ "dll-reference dll_40e5610532f3b6b970d9"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -84308,12 +84314,12 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_6b5a3ee2368b61971f52 ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_40e5610532f3b6b970d9 ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_6b5a3ee2368b61971f52 */ "dll-reference dll_6b5a3ee2368b61971f52"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_40e5610532f3b6b970d9 */ "dll-reference dll_40e5610532f3b6b970d9"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -93104,12 +93110,12 @@ function _inheritsLoose(subClass, superClass) {
 
 /***/ "./node_modules/react-dom/index.js":
 /*!***********************************************************************************************!*\
-  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_6b5a3ee2368b61971f52 ***!
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_40e5610532f3b6b970d9 ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_6b5a3ee2368b61971f52 */ "dll-reference dll_6b5a3ee2368b61971f52"))("./node_modules/react-dom/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_40e5610532f3b6b970d9 */ "dll-reference dll_40e5610532f3b6b970d9"))("./node_modules/react-dom/index.js");
 
 /***/ }),
 
@@ -95420,12 +95426,12 @@ if (false) {} else {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_6b5a3ee2368b61971f52 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_40e5610532f3b6b970d9 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_6b5a3ee2368b61971f52 */ "dll-reference dll_6b5a3ee2368b61971f52"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_40e5610532f3b6b970d9 */ "dll-reference dll_40e5610532f3b6b970d9"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -98070,37 +98076,38 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/candidates/index.js":
-/*!***********************************!*\
-  !*** ./pages/candidates/index.js ***!
-  \***********************************/
+/***/ "./pages/candidates/index.jsx":
+/*!************************************!*\
+  !*** ./pages/candidates/index.jsx ***!
+  \************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
-/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
-/* harmony import */ var _material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/Add */ "./node_modules/@material-ui/icons/Add.js");
-/* harmony import */ var _material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/Edit */ "./node_modules/@material-ui/icons/Edit.js");
-/* harmony import */ var _material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _material_ui_icons_Visibility__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/Visibility */ "./node_modules/@material-ui/icons/Visibility.js");
-/* harmony import */ var _material_ui_icons_Visibility__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Visibility__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _components_tables__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/tables */ "./components/tables/index.js");
-/* harmony import */ var _layout__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../layout */ "./layout/index.js");
-/* harmony import */ var _lib_api__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../lib/api */ "./lib/api.js");
-/* harmony import */ var _components_loader_CircularLoader__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../components/loader/CircularLoader */ "./components/loader/CircularLoader.jsx");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/icons/Add */ "./node_modules/@material-ui/icons/Add.js");
+/* harmony import */ var _material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/icons/Edit */ "./node_modules/@material-ui/icons/Edit.js");
+/* harmony import */ var _material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_icons_Visibility__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/Visibility */ "./node_modules/@material-ui/icons/Visibility.js");
+/* harmony import */ var _material_ui_icons_Visibility__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Visibility__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_tables__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/tables */ "./components/tables/index.js");
+/* harmony import */ var _layout__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../layout */ "./layout/index.js");
+/* harmony import */ var _lib_api__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../lib/api */ "./lib/api.js");
+/* harmony import */ var _components_loader_CircularLoader__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/loader/CircularLoader */ "./components/loader/CircularLoader.jsx");
+/* harmony import */ var _material_ui_icons_AcUnit__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/icons/AcUnit */ "./node_modules/@material-ui/icons/AcUnit.js");
+/* harmony import */ var _material_ui_icons_AcUnit__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_AcUnit__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _material_ui_icons_Description__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/icons/Description */ "./node_modules/@material-ui/icons/Description.js");
+/* harmony import */ var _material_ui_icons_Description__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Description__WEBPACK_IMPORTED_MODULE_11__);
+var _jsxFileName = "/home/bipin/allPros/pages/candidates/index.jsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 
 
-var _jsxFileName = "F:\\Shrinath\\Technoark\\allPros\\pages\\candidates\\index.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 
 
 
@@ -98115,140 +98122,92 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 
 
 function CandidatesPage() {
-  var router = Object(next_router__WEBPACK_IMPORTED_MODULE_6__["useRouter"])();
+  var router = Object(next_router__WEBPACK_IMPORTED_MODULE_4__["useRouter"])();
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_7__["useState"])([]),
-      customer = _useState[0],
-      setCustomer = _useState[1];
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_5__["useState"])([{
+    id: 1,
+    firstName: "John",
+    lastName: 'Smith',
+    email: "john@co",
+    phone: "987123123"
+  }]),
+      candidates = _useState[0],
+      setCandidates = _useState[1];
 
-  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_7__["useState"])(true),
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_5__["useState"])(true),
       isLoading = _useState2[0],
       setIsLoading = _useState2[1];
 
-  Object(react__WEBPACK_IMPORTED_MODULE_7__["useEffect"])(function () {
-    var fetchData =
-    /*#__PURE__*/
-    function () {
-      var _ref = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
-      /*#__PURE__*/
-      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var _ref2, data;
-
-        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return _lib_api__WEBPACK_IMPORTED_MODULE_10__["default"].get("/customers");
-
-              case 2:
-                _ref2 = _context.sent;
-                data = _ref2.data;
-                setCustomer(data);
-                setIsLoading(false);
-
-              case 6:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee);
-      }));
-
-      return function fetchData() {
-        return _ref.apply(this, arguments);
-      };
-    }(); // fetchData();
-
-  }, []);
-
-  var addCustomer = function addCustomer() {
-    router.push("/customers/add");
-  };
-
-  if (!customer) {
-    return __jsx(_layout__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  if (!candidates) {
+    return __jsx(_layout__WEBPACK_IMPORTED_MODULE_7__["default"], {
       pageName: "Customer",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 39
+        lineNumber: 22
       },
       __self: this
-    }, __jsx(_components_loader_CircularLoader__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    }, __jsx(_components_loader_CircularLoader__WEBPACK_IMPORTED_MODULE_9__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40
+        lineNumber: 22
       },
       __self: this
     }));
   }
 
-  return __jsx(_layout__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  return __jsx(_layout__WEBPACK_IMPORTED_MODULE_7__["default"], {
     pageName: "Candidates",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 26
     },
     __self: this
-  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Container"], {
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Container"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 27
     },
     __self: this
-  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Box"], {
     padding: 3,
     clone: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 28
     },
     __self: this
-  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Paper"], {
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Paper"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 29
     },
     __self: this
-  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Box"], {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
     marginBottom: 3,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 30
     },
     __self: this
-  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Typography"], {
     variant: "h5",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 36
     },
     __self: this
-  }, "Candidates"), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
-    onClick: addCustomer,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 57
-    },
-    __self: this
-  }, __jsx(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 58
-    },
-    __self: this
-  }))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+  }, "Candidates")), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Box"], {
     padding: 3,
     clone: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 43
     },
     __self: this
-  }, __jsx(_components_tables__WEBPACK_IMPORTED_MODULE_8__["Table"], {
+  }, __jsx(_components_tables__WEBPACK_IMPORTED_MODULE_6__["Table"], {
     columns: [{
       title: "First Name",
       field: "firstName"
@@ -98262,18 +98221,7 @@ function CandidatesPage() {
       title: "Email",
       field: "email"
     }],
-    data: [{
-      firstName: "John",
-      lastName: "Deeee",
-      email: "john@co",
-      contact: "123123"
-    }, {
-      firstName: "Cary",
-      lastName: "Bow",
-      email: "john@co",
-      contact: "123123"
-    }] // data={customer}
-    ,
+    data: candidates,
     options: {
       pageSize: 25,
       pageSizeOptions: [5, 10, 25, 50, 75, 100],
@@ -98305,38 +98253,38 @@ function CandidatesPage() {
     ,
     actions: [{
       icon: function icon() {
-        return __jsx(_material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        return __jsx(_material_ui_icons_AcUnit__WEBPACK_IMPORTED_MODULE_10___default.a, {
           color: "primary",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 115
+            lineNumber: 83
           },
           __self: this
         });
       },
-      tooltip: "Edit Customer",
+      tooltip: 'Screen Test',
       onClick: function onClick(event, rowData) {
-        router.push("/customers/edit/[id]", "/customers/edit/".concat(rowData.id));
+        router.push("/candidates/screenTest/".concat(rowData.id));
       }
     }, {
       icon: function icon() {
-        return __jsx(_material_ui_icons_Visibility__WEBPACK_IMPORTED_MODULE_5___default.a, {
+        return __jsx(_material_ui_icons_Description__WEBPACK_IMPORTED_MODULE_11___default.a, {
           color: "primary",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 125
+            lineNumber: 90
           },
           __self: this
         });
       },
-      tooltip: "View",
+      tooltip: "Form",
       onClick: function onClick(event, rowData) {
-        router.push("/candidates/view/123");
+        router.push("/candidates/form/1");
       }
     }],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 44
     },
     __self: this
   }))))));
@@ -98346,28 +98294,28 @@ function CandidatesPage() {
 
 /***/ }),
 
-/***/ 3:
-/*!************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fcandidates&absolutePagePath=F%3A%5CShrinath%5CTechnoark%5CallPros%5Cpages%5Ccandidates%5Cindex.js ***!
-  \************************************************************************************************************************************************/
+/***/ 0:
+/*!*************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fcandidates&absolutePagePath=%2Fhome%2Fbipin%2FallPros%2Fpages%2Fcandidates%2Findex.jsx ***!
+  \*************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fcandidates&absolutePagePath=F%3A%5CShrinath%5CTechnoark%5CallPros%5Cpages%5Ccandidates%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcandidates&absolutePagePath=F%3A%5CShrinath%5CTechnoark%5CallPros%5Cpages%5Ccandidates%5Cindex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fcandidates&absolutePagePath=%2Fhome%2Fbipin%2FallPros%2Fpages%2Fcandidates%2Findex.jsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcandidates&absolutePagePath=%2Fhome%2Fbipin%2FallPros%2Fpages%2Fcandidates%2Findex.jsx!./");
 
 
 /***/ }),
 
-/***/ "dll-reference dll_6b5a3ee2368b61971f52":
+/***/ "dll-reference dll_40e5610532f3b6b970d9":
 /*!*******************************************!*\
-  !*** external "dll_6b5a3ee2368b61971f52" ***!
+  !*** external "dll_40e5610532f3b6b970d9" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_6b5a3ee2368b61971f52;
+module.exports = dll_40e5610532f3b6b970d9;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=candidates.js.map
