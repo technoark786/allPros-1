@@ -12,7 +12,6 @@ import {
   import Layout from '../../../layout';
   import api from '../../../lib/api';
   import { useSnackbar } from '../../../lib/context';
-  import MembersForm from '../../../components/forms/MembersForm';
   import CircularLoader from '../../../components/loader/CircularLoader';
   
   const useStyles = makeStyles((theme) => ({
@@ -133,12 +132,12 @@ import {
           <Paper className={classes.accountPaper}>
             <Typography variant="h5">Member Details</Typography>
   
-            <Formik
+            {/* <Formik
               validationSchema={validationSchema}
               initialValues={member}
               onSubmit={handleUpdate}
               component={MembersForm}
-            />
+            /> */}
             <Divider variant="middle" style={{ margin: '50px 0' }} />
   
             <div>
