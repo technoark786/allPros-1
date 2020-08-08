@@ -15,7 +15,7 @@ export default [
     },
     { id: 2, icon: <SearchIcon />, title: 'Search', link: '/dashboard' },
     { id: 3, icon: <PeopleIcon />, title: 'Owners', link: '/owners' },
-    { id: 4, icon: <PeopleIcon />, title: 'Candidate', link: '/dashboard' },
+    { id: 4, icon: <PeopleIcon />, title: 'Candidate', link: '/candidates' },
     { id: 4, icon: <WorkIcon />, title: 'Jobs', link: '/jobs' },
     { id: 6, icon: <ExitToAppIcon />, title: 'Logout', link: '/logout', },
 ];
