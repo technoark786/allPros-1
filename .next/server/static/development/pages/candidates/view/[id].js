@@ -4723,21 +4723,21 @@ function ViewCandidatePage() {
       lineNumber: 127
     },
     __self: this
-  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Paper"], {
-    className: classes.accountPaper,
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Typography"], {
+    variant: "h5",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 128
     },
     __self: this
-  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Typography"], {
-    variant: "h5",
+  }, "Candidates Details"), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Paper"], {
+    className: classes.accountPaper,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 129
     },
     __self: this
-  }, "Candidates Details"))));
+  })));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (ViewCandidatePage);
