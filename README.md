@@ -1,4 +1,4 @@
-# Waityme
+# allprops
 
 Waityme application with a focus on a clean, modern, minimaslistic and snappy UX.
 
