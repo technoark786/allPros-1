@@ -9,6 +9,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import drawerData from '../lib/drawer-data';
+import logo from "../assets/img/logo.jpg";
 
 const drawerWidth = 240;
 
@@ -87,9 +88,10 @@ function Logo() {
   return (
     <Link href="/dashboard">
       <div className={classes.logo}>
-        <Typography className={classes.logoText}>
+        {/* <Typography className={classes.logoText}>
           All Pros
-        </Typography>
+        </Typography> */}
+        <img src={logo} height="150px" />
       </div>
     </Link>
   );
