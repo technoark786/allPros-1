@@ -15,7 +15,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import DeleteIcon from "@material-ui/icons/Delete";
 import { Formik } from "formik";
 import { useRouter } from "next/router";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, createContext, useContext } from "react";
 import * as yup from "yup";
 import Fieldset, { Legend } from "../../../components/fieldset";
 import Layout from "../../../layout";
@@ -26,6 +26,7 @@ import CircularLoader from "../../../components/loader/CircularLoader";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 import TabPanel from "../../../components/tabs/TabPanel";
+import ApplicationFormStepper from "../../../components/forms/ApplicationForm";
 
 const useStyles = makeStyles((theme) => ({
     accountPaper: {
@@ -56,19 +57,19 @@ function ViewOwner() {
         email: "john@co",
         phone: "987123123",
         managerType: "BOH Manager",
-        yearsInHospitality:'',
-        currentRole:'',
-        yearsOfRoleWithCompany:'',
-        salary:'',
-        authorized:'Yes',
-        transportationAccess:'Yes',
-        avaiableToWork:'',
-        HoursPerWeekWork:'',
-        hearAboutUs:'',
+        yearsInHospitality: "",
+        currentRole: "",
+        yearsOfRoleWithCompany: "",
+        salary: "",
+        authorized: "Yes",
+        transportationAccess: "Yes",
+        avaiableToWork: "",
+        HoursPerWeekWork: "",
+        hearAboutUs: "",
     });
     const [dialogOpen, setDialogOpen] = useState(false);
     const { openSnackbar } = useSnackbar();
-    const [selectedtab, setSelectedTab] = useState("questionnaire");
+    const [selectedtab, setSelectedTab] = useState("application");
 
     useEffect(() => {
         //   const fetchData = async () => {
@@ -143,7 +144,9 @@ function ViewOwner() {
                     <TabPanel
                         value={selectedtab}
                         index="application"
-                    ></TabPanel>
+                    >
+                        <ApplicationFormStepper />
+                    </TabPanel>
                 </Paper>
             </Container>
         </Layout>

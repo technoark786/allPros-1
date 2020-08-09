@@ -42,7 +42,7 @@ function Header(props) {
         <Typography className={classes.pageTitle} variant="h5" noWrap>
           {pageName}
         </Typography>
-        <CustomMenu/>
+        {/* <CustomMenu/> */}
         {/* <CustomMenu accountData={accountData} securityData={securityData} /> */}
       </Toolbar>
     </AppBar>
