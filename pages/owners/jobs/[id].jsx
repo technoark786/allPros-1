@@ -58,7 +58,7 @@ function Jobs() {
     const [jobs, setJobs] = useState([
         {
             id: 1,
-            title: "Restaurent Manager",
+            title: "Restaurant Manager",
             name: "HotelStrate",
             address: "Mountain View, California",
             subTitle: "Sales Marketing",
@@ -67,7 +67,7 @@ function Jobs() {
         },
         {
             id: 2,
-            title: "Restaurent Manager",
+            title: "Restaurant Manager",
             name: "HotelStrate",
             address: "Mountain View, California",
             subTitle: "Sales Marketing",
@@ -76,7 +76,7 @@ function Jobs() {
         },
         {
             id: 3,
-            title: "Restaurent Manager",
+            title: "Restaurant Manager",
             name: "HotelStrate",
             address: "Mountain View, California",
             subTitle: "Sales Marketing",
@@ -85,7 +85,7 @@ function Jobs() {
         },
         {
             id: 4,
-            title: "Restaurent Manager",
+            title: "Restaurant Manager",
             name: "HotelStrate",
             address: "Mountain View, California",
             subTitle: "Sales Marketing",
