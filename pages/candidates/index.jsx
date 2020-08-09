@@ -15,7 +15,7 @@ import DescriptionIcon from '@material-ui/icons/Description';
 
 function CandidatesPage() {
   const router = useRouter();
-  const [candidates, setCandidates] = useState([{id:1,firstName:"John",lastName:'Smith',email:"john@co",phone:"987123123"}]);
+  const [candidates, setCandidates] = useState([{id:1,firstName:"Den",lastName:'Smith',email:"john@co",phone:"987123123"}]);
   const [isLoading,setIsLoading] = useState(true);
 
   if (!candidates) {
@@ -81,7 +81,7 @@ function CandidatesPage() {
                 actions={[
                   {
                   icon: () => <AcUnitIcon color="primary" />,
-                  tooltip: 'Screen Test',
+                  tooltip: 'Screen Test for Den',
                   onClick: (event, rowData) => {
                     router.push(`/candidates/screenTest/${rowData.id}`);
                   },
