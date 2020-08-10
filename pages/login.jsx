@@ -45,7 +45,7 @@ const useStyles = makeStyles({
         maxWidth: 600,
         height: "fit-content",
         padding: 35,
-        margin: '0 20px 20px 20px',
+        margin: 20,
     },
     loginButton: {
         marginTop: 12,

@@ -91,7 +91,7 @@ function Logo() {
         {/* <Typography className={classes.logoText}>
           All Pros
         </Typography> */}
-        <img src={logo} height="150px" />
+        <img src={logo} height="150px" style={{margin:'5px auto'}}/>
       </div>
     </Link>
   );
