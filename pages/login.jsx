@@ -19,7 +19,7 @@ import api from "../lib/api";
 import { CircularLoaderWrapper } from "../components/loader/CircularLoader";
 import { useSnackbar } from "../lib/context";
 import Link from "next/link";
-import logo from "../assets/img/logo.jpg";
+import logo from "../assets/img/logo.png";
 import * as yup from "yup";
 
 const useStyles = makeStyles({
@@ -161,7 +161,7 @@ function LoginPage() {
             <img src={logo} height="200px" />
             <Paper className={classes.formPaper}>
                 <Typography className={classes.loginTitle} variant="h4">
-                    All Pros Login
+                    Login
                 </Typography>
                 <Formik
                     validationSchema={validationSchema}

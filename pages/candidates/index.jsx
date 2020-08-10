@@ -56,7 +56,7 @@ function CandidatesPage() {
                   paging: true,
                   actionsColumnIndex: -1,
                   headerStyle: {
-                    backgroundColor: "#3f0f3f",
+                    backgroundColor: "#1f54bf",
                     color: "#FFF",
                   },
                 }}

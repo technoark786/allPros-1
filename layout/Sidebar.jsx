@@ -9,7 +9,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import drawerData from '../lib/drawer-data';
-import logo from "../assets/img/logo.jpg";
+import logo from "../assets/img/logo.png";
 
 const drawerWidth = 240;
 

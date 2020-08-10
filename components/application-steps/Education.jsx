@@ -112,7 +112,7 @@ function Education(props) {
                                 ))}
                                 <Grid item xs={12}>
                                     <Button
-                                        color="secondary"
+                                        color="primary"
                                         variant="contained"
                                         onClick={addHighSchool}
                                     >
@@ -175,7 +175,7 @@ function Education(props) {
                                 ))}
                                 <Grid item xs={12}>
                                     <Button
-                                        color="secondary"
+                                        color="primary"
                                         variant="contained"
                                         onClick={addDiploma}
                                     >

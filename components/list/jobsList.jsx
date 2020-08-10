@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
     title: {
         fontSize: "26px",
         fontWeight: "bold",
+        // color:"#1f54bf",
     },
     name: {
         fontSize: "18px",
@@ -88,7 +89,9 @@ function JobsList({ data }) {
                             <Typography className={classes.name}>
                                 {item.title}
                             </Typography>
-                            <LocationOnIcon />
+                            <LocationOnIcon
+                            // style={{ color: "#1f54bf" }}
+                            />
                             <Typography className={classes.address}>
                                 {item.address}
                             </Typography>
@@ -106,7 +109,9 @@ function JobsList({ data }) {
                                     display: "flex",
                                 }}
                             >
-                                <AcUnitIcon />
+                                <AcUnitIcon 
+                                // style={{ color: "#1f54bf" }} 
+                                />
                                 <Typography className={classes.footer}>
                                     {item.title}, {item.subTitle}
                                 </Typography>
@@ -116,7 +121,9 @@ function JobsList({ data }) {
                                     display: "flex",
                                 }}
                             >
-                                <WorkIcon />
+                                <WorkIcon 
+                                // style={{ color: "#1f54bf" }} 
+                                />
                                 <Typography className={classes.address}>
                                     {item.experience}
                                 </Typography>

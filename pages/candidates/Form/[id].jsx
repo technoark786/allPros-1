@@ -8,6 +8,7 @@ import {
     Divider,
     Grow,
     Paper,
+    AppBar,
     TextField as MuiTextField,
     Typography,
 } from "@material-ui/core";
@@ -69,7 +70,7 @@ function ViewOwner() {
     });
     const [dialogOpen, setDialogOpen] = useState(false);
     const { openSnackbar } = useSnackbar();
-    const [selectedtab, setSelectedTab] = useState("application");
+    const [selectedtab, setSelectedTab] = useState("questionnaire");
 
     useEffect(() => {
         //   const fetchData = async () => {
@@ -110,26 +111,28 @@ function ViewOwner() {
 
     return (
         <Layout pageName="View Candidate">
-            <Tabs
-                value={selectedtab}
-                onChange={handleTabChange}
-                indicatorColor="primary"
-                textColor="primary"
-                variant="fullWidth"
-                style={{ backgroundColor: "#3f0f3f" }}
-                // centered
-            >
-                <Tab
-                    value="questionnaire"
-                    style={{ color: "white" }}
-                    label="Questionnaire Form"
-                />
-                <Tab
-                    value="application"
-                    style={{ color: "white" }}
-                    label="Application Form"
-                />
-            </Tabs>
+            <AppBar position="static" color="default">
+                <Tabs
+                    value={selectedtab}
+                    onChange={handleTabChange}
+                    indicatorColor="secondary"
+                    textColor="primary"
+                    variant="fullWidth"
+                    style={{ backgroundColor: "#1f54bf" }}
+                    // centered
+                >
+                    <Tab
+                        value="questionnaire"
+                        style={{ color: "white" }}
+                        label="Questionnaire Form"
+                    />
+                    <Tab
+                        value="application"
+                        style={{ color: "white" }}
+                        label="Application Form"
+                    />
+                </Tabs>
+            </AppBar>
             <Container>
                 <Paper className={classes.accountPaper}>
                     <TabPanel value={selectedtab} index="questionnaire">
@@ -141,10 +144,7 @@ function ViewOwner() {
                             component={CandidatesForm}
                         />
                     </TabPanel>
-                    <TabPanel
-                        value={selectedtab}
-                        index="application"
-                    >
+                    <TabPanel value={selectedtab} index="application">
                         <ApplicationFormStepper />
                     </TabPanel>
                 </Paper>

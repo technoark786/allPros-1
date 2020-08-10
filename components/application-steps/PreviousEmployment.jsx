@@ -156,7 +156,7 @@ function PreviousEmployment(props) {
                                 ))}
                                 <Grid item xs={12}>
                                     <Button
-                                        color="secondary"
+                                        color="primary"
                                         variant="contained"
                                         onClick={addEmployment}
                                     >
@@ -266,7 +266,7 @@ function PreviousEmployment(props) {
                                                 // border:'20px solid black'
                                                 // backgroundColor:'#3f0f3f',
                                             }}
-                                            backgroundColor="#3f0f3f"
+                                            backgroundColor="#1f54bf"
                                             ref={(ref) => {
                                                 componentRef = ref;
                                             }}

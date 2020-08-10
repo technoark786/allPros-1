@@ -165,7 +165,7 @@ function MembersPage() {
                                     paging: true,
                                     actionsColumnIndex: -1,
                                     headerStyle: {
-                                        backgroundColor: "#3f0f3f",
+                                        backgroundColor: "#1f54bf",
                                         color: "#FFF",
                                     },
                                 }}
@@ -193,18 +193,18 @@ function MembersPage() {
                                           );
                                       },
                                   },
-                                    {
-                                        icon: () => (
-                                            <EditIcon color="primary" />
-                                        ),
-                                        tooltip: "Edit",
-                                        onClick: (event, rowData) => {
-                                            router.push(
-                                                `/members/edit/[id]`,
-                                                `/Members/edit/${rowData.id}`
-                                            );
-                                        },
-                                    },
+                                    // {
+                                    //     icon: () => (
+                                    //         <EditIcon color="primary" />
+                                    //     ),
+                                    //     tooltip: "Edit",
+                                    //     onClick: (event, rowData) => {
+                                    //         router.push(
+                                    //             `/members/edit/[id]`,
+                                    //             `/Members/edit/${rowData.id}`
+                                    //         );
+                                    //     },
+                                    // },
                                 ]}
                             />
                         </Box>
