@@ -187,7 +187,7 @@ function Search(props) {
                                     >
                                         Search
                                     </Button>
-                                    <Button
+                                    {/* <Button
                                         variant="outlined"
                                         color="primary"
                                         type="reset"
@@ -199,7 +199,7 @@ function Search(props) {
                                         }}
                                     >
                                         Clear Filter
-                                    </Button>
+                                    </Button> */}
                                 </Grid>
                             </Grid>
                         </Form>
