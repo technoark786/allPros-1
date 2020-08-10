@@ -13,7 +13,7 @@ export default [
         icon: <DashboardIcon />,
         link: '/dashboard',
     },
-    { id: 2, icon: <SearchIcon />, title: 'Search', link: '/dashboard' },
+    { id: 2, icon: <SearchIcon />, title: 'Search', link: '/search' },
     { id: 3, icon: <PeopleIcon />, title: 'Owners', link: '/owners' },
     { id: 4, icon: <PeopleIcon />, title: 'Candidate', link: '/candidates' },
     { id: 4, icon: <WorkIcon />, title: 'Jobs', link: '/jobs' },
