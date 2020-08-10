@@ -505,19 +505,19 @@ function DashboardPage() {
                 </Grid>
                 <Grid item xs={3}>
                     <MetricCard
-                        title="Total"
+                        title="Total Owners"
                         stat='10000'
                     />
                 </Grid>
                 <Grid item xs={3}>
                     <MetricCard
-                        title="This Month"
+                        title="Total Candidates"
                         stat='5000'
                     />
                 </Grid>
                 <Grid item xs={3}>
                     <MetricCard
-                        title="Today"
+                        title="Total Jobs"
                         stat='500'
                     />
                 </Grid>
