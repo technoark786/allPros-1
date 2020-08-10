@@ -102,7 +102,7 @@ function Search(props) {
                                         // }}
                                         options={[]}
                                         fullWidth
-                                        label="Fee Status"
+                                        label="----Select Option----"
                                     />
                                 </Grid>
                                 <Grid item xs={12} sm={6} md={4}>
@@ -122,7 +122,7 @@ function Search(props) {
                                         // valueField="value"
                                         options={[]}
                                         fullWidth
-                                        label="Level Of Study"
+                                        label="----Select Option----"
                                     />
                                 </Grid>
                                 <Grid item xs={12} sm={6} md={4}>
@@ -142,13 +142,13 @@ function Search(props) {
                                         // valueField="value"
                                         options={[]}
                                         fullWidth
-                                        label="Attandance Mode"
+                                        label="----Select Option----"
                                     />
                                 </Grid>
                                 <Grid item xs={12} sm={6} md={4}>
                                     <Field
                                         name="startDate"
-                                        label="Start Date"
+                                        label="Date"
                                         fullWidth
                                         format="MM/dd/yyyy"
                                         // style={{
@@ -175,7 +175,7 @@ function Search(props) {
                                         // }}
                                         options={[]}
                                         fullWidth
-                                        label="Award Type"
+                                        label="----Select Option----"
                                     />
                                 </Grid>
                                 <Grid item xs={12} sm={6} md={4}>
