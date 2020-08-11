@@ -53,7 +53,7 @@ function ViewOwner() {
         contactNo: "7893849894",
         businessType: "Bar or Nightclub",
         mobileNo: "898432432",
-        address: "Lane 4, Lower Parel Road, Near Lake Hospital, Australia",
+        address: "",
         duration: "4 Year",
         hours: "8 Hours",
         status: "Active",
