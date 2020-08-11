@@ -25,18 +25,18 @@ function CandidatesPage() {
     const [candidates, setCandidates] = useState([
         {
             id: 1,
-            firstName: "Den",
-            lastName: "Smith",
-            email: "john@co",
-            phone: "987123123",
+            firstName: "Louisa",
+            lastName: "B",
+            email: "dummyemail@tesdomain.com",
+            phone: "+1-832-533-2620",
             status: "Approved",
         },
         {
             id: 2,
             firstName: "Mark",
             lastName: "Smith",
-            email: "amrk@co",
-            phone: "987123123",
+            email: "dummyemail@tesdomain.com",
+            phone: "+1-832-533-2620",
             status: "Approved",
         },
     ]);
