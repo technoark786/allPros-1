@@ -29,7 +29,7 @@ function CandidatesPage() {
             lastName: "Smith",
             email: "john@co",
             phone: "987123123",
-            status: "Active",
+            status: "Approved",
         },
         {
             id: 2,
@@ -37,7 +37,7 @@ function CandidatesPage() {
             lastName: "Smith",
             email: "amrk@co",
             phone: "987123123",
-            status: "Inactive",
+            status: "Approved",
         },
     ]);
     const [isLoading, setIsLoading] = useState(true);
@@ -85,7 +85,7 @@ function CandidatesPage() {
                                                     style={{
                                                         backgroundColor:
                                                             rowData.status ==
-                                                            "Active"
+                                                            "Approved"
                                                                 ? "green"
                                                                 : "red",
                                                     }}
